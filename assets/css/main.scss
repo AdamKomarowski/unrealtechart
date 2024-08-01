@@ -1,0 +1,174 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$sans-serif : -apple-system, "Nunito Sans", ".SFNSText-Regular", "San Francisco", "Droid Sans", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif-narrow : -apple-system, "Nunito Sans", ".SFNSText-Regular", "San Francisco", "Droid Sans", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace  : Consolas, Monaco, "Lucida Console", monospace;
+
+$type-size-5 : 1.1em;
+$type-size-6 : 0.85em;
+$type-size-7 : 0.8em;
+$type-size-8 : 0.75em;
+
+$text-color : #383838;
+
+$link-color : #ab131c;
+$link-color-visited : #ab131c;
+$link-color-hover : #ef7a7a;
+
+$intro-transition  : none;
+$global-transition : none;
+
+@import "minimal-mistakes";
+
+::-moz-selection {
+  color: #fff;
+  background: $gray;
+}
+
+::selection {
+  color: #fff;
+  background: $gray;
+}
+
+html {
+  /* apply a natural box layout model to all elements */
+  box-sizing: border-box;
+  background-color: $background-color;
+  font-size: 17px;
+
+  @include breakpoint($medium) {
+    font-size: 18px;
+  }
+
+  @include breakpoint($large) {
+    font-size: 17px;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 16px;
+  }
+}
+
+.masthead, .greedy-nav {
+  background: $lighter-gray;
+}
+
+.greedy-nav .hidden-links {
+  background: #fff;
+  border-color: $light-gray transparent;
+}
+
+.greedy-nav .hidden-links a:hover {
+  background: transparent;
+}
+
+.greedy-nav .hidden-links::after {
+  border-color: $light-gray transparent;
+}
+
+.greedy-nav .hidden-links::before {
+  border-color: $light-gray transparent;
+}
+
+.greedy-nav .hidden-links li {
+  border-color: $light-gray;
+}
+
+.greedy-nav__toggle {
+  background: $light-gray;
+}
+
+.greedy-nav a:not(.site-title):not(.masthead__menu-item), .greedy-nav a:not(.site-title):not(.masthead__menu-item):hover {
+  color: $taa-main;
+  font-weight: 600;
+}
+
+.greedy-nav a:not(.site-title):not(.masthead__menu-item):active, .greedy-nav a:not(.site-title):not(.masthead__menu-item):hover {
+  color: $taa-bright;
+  border-color: $taa-bright;
+  border-width: 2px;
+  font-weight: 600;
+}
+
+.greedy-nav .visible-links a:before {
+  background: $taa-bright;
+  height: 2px;
+}
+
+.greedy-nav a.site-title, .greedy-nav a.site-title:visited {
+  color: $taa-main;
+  font-weight: 600;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.greedy-nav a.site-title:active, .greedy-nav a.site-title:hover {
+  color: $taa-bright;
+  border-color: $taa-bright;
+  font-weight: 600;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+/*
+Fixing a bug in 'a' styles order in minimal-mistakes.
+Hover must always be last. Plus disabling special color for visited.
+*/
+.nav__list .nav__items a, .nav__list .nav__items a:visited {
+  color: inherit;
+}
+
+.page__content a:not(.btn):visited {
+  color: $link-color;
+}
+
+.page__content a:not(.btn):hover, .nav__list .nav__items a:hover {
+  color: $link-color-hover;
+  text-decoration: none;
+}
+
+.page__content p
+{
+  line-height: 1.6em;
+  font-weight: 400;
+}
+
+.sidebar li
+{
+  line-height: 1.9em;
+}
+
+.nav__sub-title {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0;
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-6;
+  font-weight: bold;
+  text-transform: none;
+  border-bottom: none;
+}
+
+.sidebar__right {
+  @include breakpoint($large) {
+    top: -70px;
+  }
+}
+
+.toc .nav__title {
+  background: $taa-light;
+}
+
+.toc__menu {
+  font-size: 1.0rem;
+  text-transform: none;
+
+  a {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
