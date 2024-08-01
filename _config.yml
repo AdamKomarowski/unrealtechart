@@ -20,9 +20,9 @@ title                    : "Unreal Technicals"
 title_separator          : "-"
 name                     : "Jan Kowalski"
 description              : "Guide to Unreal Engine"
-url                      : "https://unrealartoptimization.github.io"
+url                      : "https://adamkomarowski.github.io/unrealtechart/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/AdamKomarowski/unrealtechart"
+repository               : "adamkomarowski/adamkomarowski.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : false
 words_per_minute         : 200
