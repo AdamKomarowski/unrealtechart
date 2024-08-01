@@ -97,12 +97,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Oskar Świerad"
+  name             : "Adam Komarowski"
   avatar           : "assets/images/taa_logo.png"
-  bio              : Technical artist, game developer. Creator of <a href="https://youtube.com/c/TechArtAid">Tech Art Aid</a> video tutorials
+  bio              : Technical artist and game developer.
   location         : 
   email            : 
-  uri              : "https://techartaid.com"
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
@@ -115,17 +115,17 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "oswierad"
+  linkedin         : "adam-komarowski"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "TechArtAid"
+  twitter          : "Adam67955228"
   vine             :
   weibo            :
   xing             :
-  youtube          : "https://youtube.com/c/TechArtAid"
+  youtube          : "https://www.youtube.com/@adamkomarowski5690"
 
 
 # Reading Files
