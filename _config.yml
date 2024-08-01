@@ -22,7 +22,7 @@ name                     : "Jan Kowalski"
 description              : "Guide to Unreal Engine"
 url                      : "https://adamkomarowski.github.io/cix"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "AdamKomarowski/unrealtechart/chux"
+repository               : "AdamKomarowski/xdx/chux"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : false
 words_per_minute         : 200
