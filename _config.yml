@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en"
-title                    : "Unreal Art Optimization"
+title                    : "Unreal Engine Technical Doc"
 title_separator          : "-"
 name                     : "Jan Kowalski"
-description              : "Guide to graphics performance in Unreal Engine"
+description              : "Guide to Unreal Engine"
 url                      : "https://unrealartoptimization.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "UnrealArtOptimization/unrealartoptimization.github.io"
+repository               : "https://github.com/AdamKomarowski/unrealtechart"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : false
 words_per_minute         : 200
@@ -75,7 +75,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : "TechArtAid"
+  username               : "Unreal Technicals"
 facebook:
   username               :
   app_id                 :
