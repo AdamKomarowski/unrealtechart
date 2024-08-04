@@ -4,7 +4,7 @@ excerpt: ""
 permalink: "/book/"
 ---
 
-__Unreal Technics__ was written to WRITE A DESCRIPTION
+__Unreal Technics__ was written to expand knowledge about game development but in a more engineered way. 
 
 There's no the need to dive into the code to understand any fragment. However, if you want to fact-check the text (please do), there are sources and links in every chapter's footnotes.
 
