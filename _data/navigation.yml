@@ -2,13 +2,13 @@
 main:
   - title: "Intro"
     url: /book/
-  - title: "Diagnostics"
-    url: /book/process/
-  - title: "Pipelines"
-    url: /book/pipelines/
   - title: "Profiling"
+    url: /book/process/
+  - title: "Python"
+    url: /book/pipelines/
+  - title: "C++"
     url: /book/profiling/
-  - title: "Optimization"
+  - title: "Tools"
     url: /book/optimization/
   - title: "About"
     url: /book/about/
