@@ -4,11 +4,11 @@ main:
     url: /book/
   - title: "Profiling"
     url: /book/process/
-  - title: "Python and C++"
+  - title: "Python/C++"
     url: /book/pipelines/
-  - title: "Tools and Proceduralism"
+  - title: "Tools"
     url: /book/profiling/
-  - title: "References"
+  - title: "Games, Books, Notes"
     url: /book/optimization/
   - title: "About"
     url: /book/about/
