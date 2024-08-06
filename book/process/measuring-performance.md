@@ -1,5 +1,5 @@
 ---
-title: "Measuring Performance"
+title: "CPU Profiling"
 excerpt: ""
 permalink: "/book/process/measuring-performance/"
 ---
@@ -9,19 +9,9 @@ permalink: "/book/process/measuring-performance/"
 
 In this chapter you'll learn about:
 
-* The importance of using milliseconds in game development
-* Converting ms to frames per second
-* Basic tools for measuring performance
-* Displaying statistics for each subsystem, like occlusion culling or particles
-* Recording performance metrics and reading them with a profiler
-
-If you prefer a video version of this lesson, you can [{{ icon_link }} watch it on YouTube](https://www.youtube.com/watch?list=PLF8ktr3i-U4A7vuQ6TXPr3f-bhmy6xM3S&v=SXLYy6D1y80).
-
-{% capture tutorialvideo %}SXLYy6D1y80?list=PLF8ktr3i-U4A7vuQ6TXPr3f-bhmy6xM3S&amp;showinfo=1{% endcapture %}
-{% include video id=tutorialvideo provider="youtube" %}
-
-_Note:_ Every chapter of this book is extended compared with the original video. It's also regularly updated, while videos stay unchanged since their upload.
-{: .notice--info}
+* How to use Unreal Insights
+* Profile CPU
+* What to do with that next
 
 ## Are frames per second the ultimate metric?
 
