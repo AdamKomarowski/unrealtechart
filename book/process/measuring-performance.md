@@ -75,7 +75,37 @@ Window -> Developer Tools -> Session Frontend
 __Standalone__ profiling system. Makes it easy to add __your own profiling data.__ 
 Finally, it can __record data remotely.__ __Smaller impact__ on execution.
 
+__Game__ thread: Calculates all __game logic__ and __transforms.__ 
+* Animations
+* Object Positions
+* Caracter Movement
+* Physics
+* Spawning
+* AI
 
+By default, Ticks are calculated __every frame.__ The fact is, Blueprints __rarely__ need to tick by default. (Ticking can be disabled per-Blueprint in the Blueprint Class Defaults)
+Too many actors ticing can __substantially slow down__ a project and identifying these is important. 
+
+`stat game` gives a general idea on how long the various gameplay ticks are taking. 
+Use `dumpticks` to see a list of all actors that are currently ticking. 
+
+Which of these could be driven by __Events__ or __Timers__?
+
+__Alternatives to Tick:
+* Timelines
+* TImers
+* Manual toggling of Actor Tick
+* Reducing the Tick Interval
+* Event driven systems (use dispatchers!)
+
+Simple rotation effects can be replaced with native logic or shaders. Using __RotatingMovementComponent__ can do work in C++. 
+
+Or use __RotateAboutWorldAxis__ material function to calculate in on the vertex shader.
+
+* __Expensive__ Functionality: Try to avoid using inherently __expensive__ functions: 
+- Get All Actors of Class (Functions like that can wreak havoc on performance)
+- For Loop (Can be expensive especially when nested. Consider using breakable loops if iterations aren't necessary after a result has been found.)
+-SpawnActor NONE (The more complicated construction script is, the more extensive the spawn time.)
 
 
 
