@@ -16,7 +16,7 @@ In this chapter you'll learn about:
   - Largest number shows you the likely bottleneck.
   You can also use stat unitGraph, which shows a line graph playback. Mostly useful for spotting repeating hitches.
 
-Identifying bottlenecks:
+__Identifying bottlenecks:__
 If possible, avoid profiling your game in the editor.
 Prefer cooked builds, running on the target platform. But if you have to do it, always:
 
@@ -28,7 +28,7 @@ Prefer cooked builds, running on the target platform. But if you have to do it, 
 * You can also check amount of drawcall by: stat scenrendering
 Conclusion: We can say as the number of draw inches increases, the frame rendering time increases.
 
-Analysis of a frame:
+__Analysis of a frame:__
 
 Before Rendering:
 CPU: Game (Game context) -> Draw (What to render)
