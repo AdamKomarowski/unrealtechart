@@ -33,9 +33,6 @@ Prefer cooked builds, running on the target platform. But if you have to do it, 
 - Make sure to turn off frame Rate Smoothing(Project Settings)
 - Turn off VSync (r.vsync 0)
 
-* You can also check amount of drawcall by: stat scenrendering
-Conclusion: We can say as the number of draw inches increases, the frame rendering time increases.
-
 
 __Analysis of a frame:__
 
@@ -91,9 +88,9 @@ Use `dumpticks` to see a list of all actors that are currently ticking.
 
 Which of these could be driven by __Events__ or __Timers__?
 
-__Alternatives to Tick:
+__Alternatives__ to Tick:
 * Timelines
-* TImers
+* Timers
 * Manual toggling of Actor Tick
 * Reducing the Tick Interval
 * Event driven systems (use dispatchers!)
@@ -115,8 +112,35 @@ Convert __Complex__ functionality to C++. It is good practice to move complex lo
 Animation __Fast__ Path: Make sure Anim Graph uses Fast path for property access.
 
 
+__Draw__ thread
 
+__Frustrum__ culling checks what is in front of the camera, while __hardware occlusion__ queries based on the scene depth buffer.
+Too many objects(10-15k+) can cause __performance__ impact.
 
+Critical on games with __open/large__ environements.
+
+__Draw__ calls
+
+Draw calls have a __huge__ impact on performance.
+
+* You can check amount of drawcall by: stat scenrendering
+__Conclusion:__ We can say as the number of draw inches increases, the frame rendering time increases.
+
+Each time the renderer is done it needs to receive commands from the render thread, which adds __overhead__.
+Draw calls have a much __bigger impact than polycount__ in many scenarios.
+
+__Reducing__ draw calls
+
+To lower the draw calls, it is better to use __fewer larger models__ than many small ones.
+However, you cannot do that too much, as it __impactis everything else__ negatively:
+
+- Worse for occlusion
+
+- Worse for lightmapping
+
+- Worse for collision calculation
+
+- Worse for memory
 
 
 
