@@ -108,7 +108,7 @@ Or use __RotateAboutWorldAxis__ material function to calculate in on the vertex 
 
 - For Loop (Can be expensive especially when nested. Consider using breakable loops if iterations aren't necessary after a result has been found.)
 
--SpawnActor NONE (The more complicated construction script is, the more extensive the spawn time.)
+- SpawnActor NONE (The more complicated construction script is, the more extensive the spawn time.)
 
 
 
