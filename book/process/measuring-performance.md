@@ -72,13 +72,8 @@ Window -> Developer Tools -> Session Frontend
 
 ## Unreal Insights 
 
-__Standalone__ profiling system.
-
-Makes it easy to add __your own profiling data.__
-
-Finally, it can __record data remotely.__
-
-__Smaller impact__ on execution.
+__Standalone__ profiling system. Makes it easy to add __your own profiling data.__ 
+Finally, it can __record data remotely.__ __Smaller impact__ on execution.
 
 
 
