@@ -18,8 +18,11 @@ __Identifying bottlenecks:__
   You can also use stat unitGraph, which shows a line graph playback. Mostly useful for spotting repeating hitches.
 
 __Frame:__ total time to finish each frame.
+
 __Game:__ C++ or BP gameplay operations.
+
 __Draw:__ CPU render time.
+
 __GPU:__ GPU Render time.
 
 If possible, avoid profiling your game in the editor.
@@ -50,6 +53,42 @@ Results in a .csv file that can be used to be potted in a chart. (eg. in game cu
 ## Profiling CPU
 
 Profiling can be used to capture information causing bottlenecks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Common fps rates in milliseconds
