@@ -176,6 +176,7 @@ __Hierarchical__ Level of Detail (HLODs):
 
 
 
+## GPU Profiling
 
 
 
@@ -199,20 +200,6 @@ __Hierarchical__ Level of Detail (HLODs):
 
 
 
-
-## Common fps rates in milliseconds
-
-It's useful to memorize these three frame duration values - for 30, 60 and 90 fps:
-
-<div class="notice text-center" markdown="1">
-Time in milliseconds = 1000 ms / frames per second
-
-* 30 FPS = 1000 / 30 = __33.33__ ms
-* 60 FPS = 1000 / 60 = __16.67__ ms
-* 90 FPS = 1000 / 90 = __11.11__ ms
-</div>
-
-These represent common expected refresh rates for various game categories: a "cinematic" adventure (30 fps), a fast-paced action game (60 fps) and a VR product (90 fps or more for reducing motion sickness). Each frame rate translates to a maximum time it should take to render a frame. If the software exceeds the time limit, it falls below the desired refresh rate (or even risks losing a V-Sync window).
 
 ## Breakdown of a frame
 
