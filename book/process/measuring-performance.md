@@ -8,15 +8,19 @@ In this chapter you'll learn about:
 
 * How to use Unreal Insights
 * Profile CPU
-* What to do with that next
 
 ## CPU or GPU Bound?
 
-  Use `stat unit`, not just `stat fps`.
-  - Largest number shows you the likely bottleneck.
+__Identifying bottlenecks:__
+
+ Use `stat unit`, not just `stat fps`.
+  Largest number shows you the likely bottleneck.
   You can also use stat unitGraph, which shows a line graph playback. Mostly useful for spotting repeating hitches.
 
-__Identifying bottlenecks:__
+__Frame:__ total time to finish each frame.
+__Game:__ C++ or BP gameplay operations.
+__Draw:__ CPU render time.
+__GPU:__ GPU Render time.
 
 If possible, avoid profiling your game in the editor.
 Prefer cooked builds, running on the target platform. But if you have to do it, always:
@@ -44,6 +48,8 @@ Very useful to get the stat unit times over a longer period of time.
 Results in a .csv file that can be used to be potted in a chart. (eg. in game cutscene or a camera path set up for automated tests).
 
 ## Profiling CPU
+
+Profiling can be used to capture information causing bottlenecks
 
 
 ## Common fps rates in milliseconds
