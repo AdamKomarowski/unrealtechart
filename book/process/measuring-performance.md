@@ -64,11 +64,21 @@ Profiling can be used to capture information causing __bottlenecks__ or slowdown
 
 These captures can be loaded and analyzed through the __Unreal Frontend__ in the Editor. 
 
+Window -> Developer Tools -> Session Frontend
+
 * __In addition it is worth to add:__
 
 `-toggledrawevents -statnamedevents -trace=cpu,frame,gpu,LoadTime,file,memory,net,Bookmark,log`
 
+## Unreal Insights 
 
+__Standalone__ profiling system.
+
+Makes it easy to add __your own profiling data.__
+
+Finally, it can __record data remotely.__
+
+__Smaller impact__ on execution.
 
 
 
