@@ -52,7 +52,12 @@ Results in a .csv file that can be used to be potted in a chart. (eg. in game cu
 
 ## Profiling CPU
 
-Profiling can be used to capture information causing bottlenecks
+Profiling can be used to capture information causing __bottlenecks__ or slowdowns in both the CPU and GPU.
+
+`stat Startfile` // To start
+`stat Stopfile` // To stop
+
+These captures can be loaded and analyzed through the __Unreal Frontend__ in the Editor. 
 
 
 
