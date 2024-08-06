@@ -36,10 +36,13 @@ Prefer cooked builds, running on the target platform. But if you have to do it, 
 * You can also check amount of drawcall by: stat scenrendering
 Conclusion: We can say as the number of draw inches increases, the frame rendering time increases.
 
+
 __Analysis of a frame:__
 
 Before Rendering:
+
 CPU: Game (Game context) -> Draw (What to render)
+
 GPU: GPU (Final pixels)
 
 Generate a Chart Over a Period of Time. 
@@ -48,16 +51,22 @@ Very useful to get the stat unit times over a longer period of time.
 
 `StartFPSChart` and `StopFPSChart`
 
-Results in a .csv file that can be used to be potted in a chart. (eg. in game cutscene or a camera path set up for automated tests).
+Results in a .csv file that can be used to be potted in a chart. 
+(eg. in game cutscene or a camera path set up for automated tests).
 
 ## Profiling CPU
 
 Profiling can be used to capture information causing __bottlenecks__ or slowdowns in both the CPU and GPU.
 
 `stat Startfile` // To start
+
 `stat Stopfile` // To stop
 
 These captures can be loaded and analyzed through the __Unreal Frontend__ in the Editor. 
+
+* __In addition it is worth to add:__
+
+`-toggledrawevents -statnamedevents -trace=cpu,frame,gpu,LoadTime,file,memory,net,Bookmark,log`
 
 
 
