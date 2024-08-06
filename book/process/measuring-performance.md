@@ -142,6 +142,37 @@ However, you cannot do that too much, as it __impactis everything else__ negativ
 
 - Worse for memory
 
+Level of Details (LODs):
+
+- __Simplifies__ a model or buch of models in given conditions.
+
+- Essentialy __swaps__ one model for another simpler model.
+
+- Usually means a model becomes __lower poly__ in the distance.
+
+- Can also be used to __switch__ between multi-material meshes to a single material.
+
+Using __modularity__ to build levels is a common technique. It saves work time and memory. 
+However, this __increases__ draw calls. If using a modular mesh workflow, you can always __merge meshes__ later on if needed.
+
+You can also do __instanced__ Rendering.
+
+- Automatically __groups__ models together into single draw calls.
+
+- 4.21+ does a great job at __auto-instancing__ similar meshes, but it's not a definitive solution.
+
+- In some cases, __manually__ setting up instanced meshes is ideal.
+
+__Hierarchical__ Level of Detail (HLODs):
+
+- __Gropus__ models together to reduce draw calls.
+
+- __Combine__ materials and textures (atlas)
+
+- Automatically replace __multiple__ models with combined Static meshes.
+
+- 100% __non-destructive__.
+
 
 
 
