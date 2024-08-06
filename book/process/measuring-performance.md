@@ -4,55 +4,46 @@ excerpt: ""
 permalink: "/book/process/measuring-performance/"
 ---
 
-{% include custom/inline-icons.md %}
-{% include toc icon="columns" title=page.title %}
-
 In this chapter you'll learn about:
 
 * How to use Unreal Insights
 * Profile CPU
 * What to do with that next
 
-## Are frames per second the ultimate metric?
+## CPU or GPU Bound?
 
-In hardware reviews, competing products are compared by running benchmarks based on the same games. The results are expressed in frames per second. Graphics card A is supposed to outperform B, because it produces twice as many frames in the same period of time. Game C is more demanding than D, because the same hardware is able to calculate only 40 frames each second compared to 60 in the other title.
+  Use stat unit, not just stat fps.
+  - Largest number shows you the likely bottleneck.
+  You can also use stat unitGraph, which shows a line graph playback. Mostly useful for spotting repeating hitches.
 
-Frames per second seem to be the most popular metric for performance. So why do game developers measure in _milliseconds_ instead?
+Identifying bottlenecks:
+If possible, avoid profiling your game in the editor.
+Prefer cooked builds, running on the target platform. But if you have to do it, always:
 
-Here's a quote from an article about NVidia HairWorks[^eurogamer]:
+- Play in Standalone
+- Minimize the Editor
+- Make sure to turn off frame Rate Smoothing(Project Settings)
+- Turn off VSync (r.vsync 0)
 
-> As you might expect from a technology that is said to render tens of thousands of tessellated strands of hair, the performance hit to the game is substantial - whether you are running an Nvidia or AMD graphics card. In our test case, the GTX 970 lost 24 per cent of its performance when HairWorks was enabled, dropping from an average of 51.9fps to 39.4fps. However, AMD suffers an even larger hit, losing around 47 per cent of its average frame-rate - its 49.6fps metric slashed to just 26.3fps.
+* You can also check amount of drawcall by: stat scenrendering
+Conclusion: We can say as the number of draw inches increases, the frame rendering time increases.
+  
+Analysis of a frame:
 
-The conclusion we can draw from these numbers is that enabling HairWorks-simulated hair in Witcher 3 can make the game lose up to 23 frames per second, depending on the card. But let's assume we have another feature, with an identical computational cost --  for example Depth of Field. We enable both hair and DoF at the same time. Can we calculate final fps from this information, without using milliseconds?
+Before Rendering:
+CPU: Game (Game context) -> Draw (What to render)
+GPU: GPU (Final pixels)
 
-Let's try subtracting these costs from the original frame rate.
+Generate a Chart Over a Period of Time 
 
-__49.6__ fps - __23__ fps (HW) - __23__ fps (DoF) = __3.6__ fps?
-{: .notice .text-center}
+Very useful to get the stat unit times over a longer period of time.
 
-Now what if there was a third feature of such high requirements, let's say, HBAO? What we should end up with is:
+StartFPSChart and StopFPSChart
 
-__49.6__ fps - __23__ fps (HW) - __23__ fps (DoF)- __23__ fps (HBAO) = <span style="color: red;">__-19.4__ fps?</span>
-{: .notice .text-center}
+Results in a .csv file that can be used to be potted in a chart. (eg. in game cutscene or a camera path set up for automated tests).
 
-This apparent paradox of negative frame rate arises from the fact that we didn't compare costs here, even if this was our intention. The actual cost of using these features was a _period of time_, not a number of frames. Our calculations were wrong.
+## Profiling CPU
 
-## Calculating feature costs with milliseconds
-
-Let's try milliseconds. Running the game without additional features allowed to complete about 50 frames in a second on average. How do we get the cost of each frame in milliseconds?
-
-<div class="notice--info" markdown="1">
-There are 1000 milliseconds (ms) in a second. If the game was able to finish 50 frames during 1000 ms, it means that an average frame took 1000/50 = _20 ms_ to render.
-
-After enabling HairWorks, the game produced 26 frames per second. That shows us that the time cost of a single frame rose to 1000/26 = _38.5_ ms.
-</div>
-
-Now we're working with actual time periods, which can be added to one another. The feature added 18.5 ms to the time it took to produce a frame. After enabling three features, we end up with:
-
-__20__ ms + __18.5__ ms (HW) + __18.5__ ms (DoF) + __18.5__ ms (HBAO) = __75.5__ ms
-{: .notice .text-center}
-
-Enabling two more features lead to _75.5 ms_ per frame. This means the game was running at about _13 fps_.
 
 ## Common fps rates in milliseconds
 
