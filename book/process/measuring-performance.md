@@ -110,7 +110,9 @@ Or use __RotateAboutWorldAxis__ material function to calculate in on the vertex 
 
 - SpawnActor NONE (The more complicated construction script is, the more extensive the spawn time.)
 
+Convert __Complex__ functionality to C++. It is good practice to move complex logic to native and expose them to Blueprints. 
 
+Animation __Fast__ Path: Make sure Anim Graph uses Fast path for property access.
 
 
 
