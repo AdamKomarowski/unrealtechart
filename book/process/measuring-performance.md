@@ -12,7 +12,7 @@ In this chapter you'll learn about:
 
 ## CPU or GPU Bound?
 
-  Use stat unit, not just stat fps.
+  Use `stat unit`, not just `stat fps`.
   - Largest number shows you the likely bottleneck.
   You can also use stat unitGraph, which shows a line graph playback. Mostly useful for spotting repeating hitches.
 
@@ -27,7 +27,7 @@ Prefer cooked builds, running on the target platform. But if you have to do it, 
 
 * You can also check amount of drawcall by: stat scenrendering
 Conclusion: We can say as the number of draw inches increases, the frame rendering time increases.
-  
+
 Analysis of a frame:
 
 Before Rendering:
@@ -38,7 +38,7 @@ Generate a Chart Over a Period of Time
 
 Very useful to get the stat unit times over a longer period of time.
 
-StartFPSChart and StopFPSChart
+`StartFPSChart` and `StopFPSChart`
 
 Results in a .csv file that can be used to be potted in a chart. (eg. in game cutscene or a camera path set up for automated tests).
 
