@@ -17,6 +17,7 @@ In this chapter you'll learn about:
   You can also use stat unitGraph, which shows a line graph playback. Mostly useful for spotting repeating hitches.
 
 __Identifying bottlenecks:__
+
 If possible, avoid profiling your game in the editor.
 Prefer cooked builds, running on the target platform. But if you have to do it, always:
 
@@ -34,7 +35,7 @@ Before Rendering:
 CPU: Game (Game context) -> Draw (What to render)
 GPU: GPU (Final pixels)
 
-Generate a Chart Over a Period of Time 
+Generate a Chart Over a Period of Time. 
 
 Very useful to get the stat unit times over a longer period of time.
 
