@@ -10,7 +10,7 @@ I just want to share with you my understading of technicals in game development.
 
 # About the author
 
-Hello, my name is Adam Komarowski.
+Hello, my name is __Adam Komarowski__.
 
 I work in the games industry as a technical artist, currently at Anshars&nbsp;Studio.
 
