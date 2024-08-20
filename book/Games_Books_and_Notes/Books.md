@@ -1,7 +1,7 @@
 ---
 title: "Books"
 excerpt: ""
-permalink: "/book/Games_Books_and_Notes/books/"
+permalink: "/book/Games_Books_and_Events/books/"
 ---
 
 ## A Playful Production Process

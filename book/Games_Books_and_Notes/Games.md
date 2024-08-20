@@ -1,7 +1,7 @@
 ---
 title: "Games"
 excerpt: ""
-permalink: "/book/Games_Books_and_Notes/games/"
+permalink: "/book/Games_Books_and_Events/games/"
 ---
 
 

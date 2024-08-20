@@ -1,7 +1,7 @@
 ---
 title: "Conferences"
 excerpt: ""
-permalink: "/book/Games_Books_and_Notes/conferences/"
+permalink: "/book/Games_Books_and_Events/conferences/"
 ---
 
 
