@@ -49,13 +49,13 @@ book:
     url: /book/Games_Books_and_Notes/
     children:
       - title: "Books"
-        url: /book/Games_Books_and_Notes/Books/
+        url: /book/Games_Books_and_Notes/books/
       - title: "Games"
-        url: /book/Games_Books_and_Notes/Games/
-      - title: "Game_James"
-        url: /book/Games_Books_and_Notes/Game_James/
+        url: /book/Games_Books_and_Notes/games/
+      - title: "Game James"
+        url: /book/Games_Books_and_Notes/game-james/
       - title: "Conferences"
-        url: /book/Games_Books_and_Notes/Conferences/
+        url: /book/Games_Books_and_Notes/conferences/
 
   - title: "Resources"
     url: /book/resources/
