@@ -45,17 +45,17 @@ book:
         url: /book/profiling/passes/
       - title: "External profilers"
         url: /book/profiling/external/
-  - title: "Games Books and Notes"
-    url: /book/Games_Books_and_Notes/
+  - title: "Games Books and Events"
+    url: /book/Games_Books_and_Events/
     children:
       - title: "Books"
-        url: /book/Games_Books_and_Notes/books/
+        url: /book/Games_Books_and_Events/books/
       - title: "Games"
-        url: /book/Games_Books_and_Notes/games/
+        url: /book/Games_Books_and_Events/games/
       - title: "Game James"
-        url: /book/Games_Books_and_Notes/game-james/
+        url: /book/Games_Books_and_Events/game-james/
       - title: "Conferences"
-        url: /book/Games_Books_and_Notes/conferences/
+        url: /book/Games_Books_and_Events/conferences/
 
   - title: "Resources"
     url: /book/resources/
