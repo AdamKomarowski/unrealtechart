@@ -1,7 +1,7 @@
 ---
-title: "Introduction to Profiling"
+title: "Tools"
 excerpt: ""
-permalink: "/book/profiling/"
+permalink: "/book/tools/"
 ---
 
 {% include toc icon="columns" title=page.title %}
@@ -18,11 +18,3 @@ It's hard because engine's renderer consists of dozens of systems. These pieces 
 
 But understanding performance issues is also easy now. The engine provides us with detailed statistics about each rendering pass and subsystem. Immediately useful information, including a frames-per-second graph, can be displayed with basic console commands. Various built-in tools (like the [GPU Visualizer](/book/profiling/gpu-visualizer/)) allow us to make a performance analysis - the step called _profiling_. And if we ever a need a precise breakdown of a single frame, we can turn to powerful [standalone applications](/book/profiling/external/). This book walks you through the full spectrum of tools that can be used to analyze performance.
 
-# Why profiling?
-
-So - what is profiling exactly? It's measuring the time it took to complete each function or a given block of instructions. For example: rendering all translucent meshes. By placing so called "GPU timestamps", Unreal can measure specific parts of the pipeline. Profiling allows you to compare different solutions.
-
-{% include figure image_path="/assets/images/session_frontend_profiler.png" alt="" caption="__Figure:__ Profiler tab in Session Frontend window. Panels not related to GPU profiling were minimized." %}
-
-
-As I said in part 1, I urge you to act like scientists when approach the optimization of your game. So you come up with some interesting theory, For example that shadowed lights are the problem in your scene. Then you come up with some tests to allow yourself to check if you're right or not. And then the profiling is a perfect tool for that. It will be even more visible in part 4 when we'll use an external profiler but in this part, you'll see that you can extract a lot of information already from the built-in GPU Visualizer tool. It's a common saying in the programming area that "Early optimization is the root of all evil". Basically, it means - for me it means - spending time on unnecessary details like deleting single polygons or simplifying textures, while what you should do is to do profiling and find out that you are bound by shadowed lights that shouldn't be rendered at all because they're so far away. It all comes to the fact that profiling allows to pick your battles wisely.
