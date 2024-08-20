@@ -12,6 +12,7 @@ permalink: "/book/Games_Books_and_Notes/Games/"
 __Engine:__ Unreal Engine 4 
 
 __Year of production:__ 2023
+
 __Publisher:__ Bethesda Softworks
 
 __Copies sold:__ 3 milion copies (2024) 
@@ -20,7 +21,7 @@ __Core team:__ ~100 peoples
 
 __Earns:__ 36 mln $ gross and net 11 mln $
 
-Tango's parent company ZeniMax Media was acquired by Microsoft for US$7.5 billion in March 2021 and became part of Microsoft Gaming
+- Tango's parent company ZeniMax Media was acquired by Microsoft for US$7.5 billion in March 2021 and became part of Microsoft Gaming
 
 __Production costs:__ ?
 
