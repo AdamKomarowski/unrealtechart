@@ -8,8 +8,8 @@ main:
     url: /book/pipelines/
   - title: "Tools"
     url: /book/profiling/
-  - title: "Games, Books and Notes"
-    url: /book/Games_Books_and_Notes/
+  - title: "Games, Books and Events"
+    url: /book/Games_Books_and_Events/
   - title: "About"
     url: /book/about/
 
