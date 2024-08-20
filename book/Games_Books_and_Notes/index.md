@@ -1,7 +1,7 @@
 ---
-title: "Games, Books and Notes"
+title: "Games, Books and Events"
 excerpt: ""
-permalink: "/book/Games_Books_and_Notes/"
+permalink: "/book/Games_Books_and_Events/"
 ---
 
 ## Navigate to the left to select Books/games/Game-Jams or Conferences
