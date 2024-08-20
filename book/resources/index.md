@@ -39,6 +39,8 @@ permalink: "/book/resources/"
 
 ## VFX
 
+[Optical flow instead of motion vectors](https://realtimevfx.com/t/motion-vectors-for-animated-textures-how-do-you-generate-them/575/11)
+
 ## Lights
 
 [The Science Of Lighting](https://80.lv/articles/breakdown-the-science-of-lighting/)
@@ -50,6 +52,12 @@ permalink: "/book/resources/"
 [SIGGRAPH](https://advances.realtimerendering.com/)
 
 ## Optimization
+[How to improve game thread CPU performance in Unreal Engine](https://www.unrealengine.com/en-US/blog/how-to-improve-game-thread-cpu-performance)
+
+[How to improve game thread CPU performance in Unreal Engines (CD Project)](https://www.youtube.com/watch?v=JaCf2Qmvy18)
+
+[Niagara Optimization + commands](https://dev.epicgames.com/community/learning/tutorials/0qPO/unreal-engine-optimizing-niagara-measuring-performance)
+
 
 [UE4 - Overview of Static Mesh Optimization Options](https://www.casualdistractiongames.com/post/2017/01/07/ue4-overview-of-static-mesh-optimization-options)
 
@@ -61,6 +69,15 @@ permalink: "/book/resources/"
 
 [Unreal Insights Reference](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-insights-reference-in-unreal-engine-5?application_version=5.0)
 
-[Visibility and Occlusion Culling](https://dev.epicgames.com/documentation/en-us/unreal-engine/visibility-and-occlusion-culling-in-unreal-engine)
-[Visibility and Occlusion Culling](https://dev.epicgames.com/documentation/en-us/unreal-engine/visibility-and-occlusion-culling-in-unreal-engine)
-[Visibility and Occlusion Culling](https://dev.epicgames.com/documentation/en-us/unreal-engine/visibility-and-occlusion-culling-in-unreal-engine)
+## Pure Gold Tech
+
+[Tech Blog](https://blog.selfshadow.com)
+
+[Sébastien Lagarde](https://seblagarde.wordpress.com/)
+
+[Lumen Creator](https://knarkowicz.wordpress.com/)
+
+## Houdini
+
+[Awesome Houdini](https://github.com/wyhinton/AwesomeHoudini)
+
