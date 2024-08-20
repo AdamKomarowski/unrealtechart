@@ -1,7 +1,7 @@
 ---
 title: "Games"
 excerpt: ""
-permalink: "/book/optimization/animated-meshes/"
+permalink: "/book/Games_Books_and_Notes/Games/"
 ---
 
 
