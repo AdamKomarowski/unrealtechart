@@ -7,6 +7,8 @@ permalink: "/book/optimization/"
 
 ## A Playful Production Process
 
+{% include figure image_path="/assets/images/A_Playful_Production_Process.png" alt="" caption="__Figure:__ A Playful Production Process" %}
+
 __Conclusions:__
 
 - Criticize the work, not the person
