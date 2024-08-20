@@ -1,40 +1,19 @@
 ---
-title: "Static Meshes"
+title: "Books"
 excerpt: ""
 permalink: "/book/optimization/static-meshes/"
 ---
 
-{% include custom/wip-warning.md %}
+## A Playful Production Process
 
-# LOD
+{% include figure image_path="/assets/images/A_Playful_Production_Process.png" alt="" caption="__Figure:__ A Playful Production Process" %}
 
-Prepare LODs to minimize quad overdraw and shadow-casting cost.
+__Conclusions:__
 
-# Draw calls
+- Criticize the work, not the person
 
-Draw calls link.
+- Listen to people, clearly define what a game is and what it is not.
 
-# When to split, when to combine
+Example: This jumping mechanic is bad because... when we press space for the reaction time is too long...
 
-Split:
-
-* + Ease of management from artists's perspective
-* + More precise culling
-* + LOD easier to prepare
-
-Combined:
-
-* + Less objects for the engine to manage
-* + Less draw calls
-
-## HLOD
-
-HLOD.
-
-# Shadows
-
-Shadows.
-
-# Instancing
-
-Instancing.
+- Why game is a good game: Just three impressive shoots and zero weak. .etc. if you will do three perfect shoots film or game just will be good from the start.
