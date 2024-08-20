@@ -27,10 +27,9 @@ Production costs: ?
 
 
 Tech links:
-- 3D Toon Rendering in 'Hi-Fi RUSH'
 
-[https://www.youtube.com/watch?v=gdBACyIOCtc] 
+[3D Toon Rendering in 'Hi-Fi RUSH](https://www.youtube.com/watch?v=gdBACyIOCtc)
 
-- Developing 'Hi-Fi RUSH' Backwards and Finding Our Positive Gameplay Loop
 
-[https://www.youtube.com/watch?v=pG4UxqRMNX0]
+[Developing 'Hi-Fi RUSH' Backwards and Finding Our Positive Gameplay Loop](https://www.youtube.com/watch?v=pG4UxqRMNX0)
+
