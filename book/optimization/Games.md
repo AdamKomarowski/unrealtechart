@@ -1,7 +1,7 @@
 ---
-title: "Animated Meshes"
+title: "Games"
 excerpt: ""
 permalink: "/book/optimization/animated-meshes/"
 ---
 
-{% include custom/wip-warning.md %}
+
