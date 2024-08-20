@@ -7,7 +7,7 @@ main:
   - title: "Python/C++"
     url: /book/pipelines/
   - title: "Tools"
-    url: /book/profiling/
+    url: /book/tools/
   - title: "Games, Books and Events"
     url: /book/Games_Books_and_Events/
   - title: "About"
@@ -34,17 +34,8 @@ book:
         url: /book/pipelines/pixel/
       - title: "Memory costs"
         url: /book/pipelines/memory/
-  - title: "Profiling"
-    url: /book/profiling/
-    children:
-      - title: "View modes"
-        url: /book/profiling/view-modes/
-      - title: "Built-in GPU Visualizer"
-        url: /book/profiling/gpu-visualizer/
-      - title: "Unreal's rendering passes"
-        url: /book/profiling/passes/
-      - title: "External profilers"
-        url: /book/profiling/external/
+  - title: "Tools"
+    url: /book/tools/
   - title: "Games Books and Events"
     url: /book/Games_Books_and_Events/
     children:
