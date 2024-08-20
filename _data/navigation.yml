@@ -52,6 +52,10 @@ book:
         url: /book/Games_Books_and_Notes/Books/
       - title: "Games"
         url: /book/Games_Books_and_Notes/Games/
+      - title: "Game-James"
+        url: /book/Games_Books_and_Notes/Game-James/
+      - title: "Conferences"
+        url: /book/Games_Books_and_Notes/Conferences/
 
   - title: "Resources"
     url: /book/resources/
