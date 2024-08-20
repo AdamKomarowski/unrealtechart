@@ -1595,15 +1595,15 @@ th {
   color: #fff;
 }
 .btn--google-plus {
-  background-color: #dd4b39;
+  background-color: #007bb6;
   color: #fff;
 }
 .btn--google-plus:hover {
-  background-color: #b13c2e;
+  background-color: #007bb6;
   color: #fff;
 }
 .btn--google-plus:visited {
-  background-color: #dd4b39;
+  background-color: #007bb6;
   color: #fff;
 }
 .btn--linkedin {
