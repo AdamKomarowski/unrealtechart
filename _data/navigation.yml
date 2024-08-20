@@ -3,7 +3,7 @@ main:
   - title: "Intro"
     url: /book/
   - title: "Profiling"
-    url: /book/process/
+    url: /book/process/measuring-performance/
   - title: "Python/C++"
     url: /book/coding/
   - title: "Tools"
