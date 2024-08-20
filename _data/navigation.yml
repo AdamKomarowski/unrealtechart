@@ -9,7 +9,7 @@ main:
   - title: "Tools"
     url: /book/profiling/
   - title: "Games, Books and Notes"
-    url: /book/optimization/
+    url: /Games_Books_and_Notes/
   - title: "About"
     url: /book/about/
 
@@ -46,22 +46,22 @@ book:
       - title: "External profilers"
         url: /book/profiling/external/
   - title: "Optimization"
-    url: /book/optimization/
+    url: /Games_Books_and_Notes/
     children:
       - title: "Static meshes"
-        url: /book/optimization/static-meshes/
+        url: /Games_Books_and_Notes/static-meshes/
       - title: "Animated meshes"
-        url: /book/optimization/animated-meshes/
+        url: /Games_Books_and_Notes/animated-meshes/
       - title: "Materials and textures"
-        url: /book/optimization/materials-textures/
+        url: /Games_Books_and_Notes/materials-textures/
       - title: "Landscape"
-        url: /book/optimization/landscape/
+        url: /Games_Books_and_Notes/landscape/
       - title: "Lighting"
-        url: /book/optimization/lighting/
+        url: /Games_Books_and_Notes/lighting/
       - title: "Particle effects"
-        url: /book/optimization/vfx/
+        url: /Games_Books_and_Notes/vfx/
       - title: "Virtual reality (VR)"
-        url: /book/optimization/vr/
+        url: /Games_Books_and_Notes/vr/
   - title: "Resources"
     url: /book/resources/
   - title: "About"
