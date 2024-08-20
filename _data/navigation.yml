@@ -52,16 +52,7 @@ book:
         url: /book/Games_Books_and_Notes/Books/
       - title: "Games"
         url: /book/Games_Books_and_Notes/Games/
-      - title: "Materials and textures"
-        url: /book/Games_Books_and_Notes/materials-textures/
-      - title: "Landscape"
-        url: /book/Games_Books_and_Notes/landscape/
-      - title: "Lighting"
-        url: /book/Games_Books_and_Notes/lighting/
-      - title: "Particle effects"
-        url: /book/Games_Books_and_Notes/vfx/
-      - title: "Virtual reality (VR)"
-        url: /book/Games_Books_and_Notes/vr/
+
   - title: "Resources"
     url: /book/resources/
   - title: "About"
