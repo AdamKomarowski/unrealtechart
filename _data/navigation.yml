@@ -38,6 +38,3 @@ book:
     url: /book/resources/
   - title: "About"
     url: /book/about/
-    children:
-      - title: "License"
-        url: /book/about/license/
