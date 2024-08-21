@@ -52,6 +52,7 @@ permalink: "/book/resources/"
 [SIGGRAPH](https://advances.realtimerendering.com/)
 
 ## Optimization
+
 [How to improve game thread CPU performance in Unreal Engine](https://www.unrealengine.com/en-US/blog/how-to-improve-game-thread-cpu-performance)
 
 [How to improve game thread CPU performance in Unreal Engines (CD Project)](https://www.youtube.com/watch?v=JaCf2Qmvy18)
@@ -68,6 +69,21 @@ permalink: "/book/resources/"
 [Creating a Bundled PSO Cache](https://dev.epicgames.com/documentation/en-us/unreal-engine/manually-creating-bundled-pso-caches-in-unreal-engine?application_version=5.4)
 
 [Unreal Insights Reference](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-insights-reference-in-unreal-engine-5?application_version=5.0)
+
+[Why Use CPU Particles?](https://www.intel.com/content/www/us/en/developer/articles/technical/use-unreal-engine-particle-effects-on-the-cpu.html)
+
+## Optimization UE4
+
+[UE4 - Lights](https://www.intel.com/content/www/us/en/developer/articles/training/unreal-engine-4-optimization-tutorial-part-4.html)
+
+Notes: 
+
+- When more than four stationary __lights overlap__, any additional stationary lights are forced to work as moveable lights, increasing in the performance requirement of each additional light.
+
+- To reduce the amount of __overdraw__, use LODs to reduce the poly count of models at a distance, and reduce transparencies in particle systems and foliage.
+
+[UE4 - Niagara](https://www.intel.com/content/www/us/en/developer/articles/training/unreal-engine-4-optimization-tutorial-part-4.html)
+
 
 ## Pure Gold Tech
 
