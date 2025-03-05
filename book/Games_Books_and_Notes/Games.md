@@ -88,3 +88,26 @@ __Tech links:__
 
 [Neva | Behind the Scenes](https://www.youtube.com/watch?v=SfwXTZbG0JE)
 
+
+## Alan Wake 2
+
+{% include figure image_path="/assets/images/AlanWake2.png" alt="" caption="__Game:__ Alan Wake 2" %}
+
+__Engine:__ Northlight 
+
+__Year of production:__ 2023
+
+__Publisher:__ Epic Games
+
+__Copies sold:__ ~2 milion copies (2025) 
+
+__Core team:__ ~280 peoples
+
+__Production costs:__ 70 mln $
+
+__Tech links:__
+
+[GPU driven Rendering with Mesh Shaders](https://www.youtube.com/watch?v=EtX7WnFhxtQ)
+
+[Mesh Shaders](https://www.youtube.com/watch?v=3EMdMD1PsgY)
+
