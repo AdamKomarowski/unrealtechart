@@ -39,3 +39,35 @@ __Tech links:__
 
 [Developing 'Hi-Fi RUSH' Backwards and Finding Our Positive Gameplay Loop](https://www.youtube.com/watch?v=pG4UxqRMNX0)
 
+
+## Ghost of Tsushima
+
+{% include figure image_path="/assets/images/hifirush.png" alt="" caption="__Game:__ Ghost of Tsushima" %}
+
+__Engine:__ In-House engine 
+
+__Year of production:__ 2020
+
+__Publisher:__ Sucker Punch
+
+__Copies sold:__ ~10 milion copies (2025) 
+
+__Core team:__ ~160 peoples
+
+__Earns:__ 215 mln $ gross
+
+__Production costs:__ 60 mln $
+
+__Tech links:__
+
+[Procedural Grass in 'Ghost of Tsushima'](https://www.youtube.com/watch?v=Ibe1JBF5i5Y)
+
+[Samurai Shading in Ghost of Tsushima](https://www.youtube.com/watch?v=LC8VedwibkI)
+
+[Real-Time Samurai Cinema: Lighting, Atmosphere, and Tonemapping in Ghost of Tsushima](https://www.youtube.com/watch?v=GOee6lcEbWg)
+
+[Blowing from the West: Simulating Wind in 'Ghost of Tsushima'](https://www.youtube.com/watch?v=d61_o4CGQd8)
+
+[Ghost of Tsushima SIGGRAPH Talks](https://www.glowybits.com/blog/2022/12/18/ghost_talks/)
+
+[Concept Art](https://www.ianchiew.com/ghost-of-tsushima)
