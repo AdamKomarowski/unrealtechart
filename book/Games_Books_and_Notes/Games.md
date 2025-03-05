@@ -92,7 +92,7 @@ __Publisher:__ Devolver Digital
 
 __Tech links:__
 
-[Neva | Behind the Scenes](https://www.youtube.com/watch?v=SfwXTZbG0JE)
+[Behind the Scene](https://www.youtube.com/watch?v=SfwXTZbG0JE)
 
 
 ## Alan Wake 2
