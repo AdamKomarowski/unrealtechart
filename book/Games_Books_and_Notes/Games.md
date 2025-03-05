@@ -42,7 +42,7 @@ __Tech links:__
 
 ## Ghost of Tsushima
 
-{% include figure image_path="/assets/images/hifirush.png" alt="" caption="__Game:__ Ghost of Tsushima" %}
+{% include figure image_path="/assets/images/GhostofTsushima_Cover.png" alt="" caption="__Game:__ Ghost of Tsushima" %}
 
 __Engine:__ In-House engine 
 
