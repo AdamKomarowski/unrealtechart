@@ -13,6 +13,8 @@ __Engine:__ Unreal Engine 4
 
 __Year of production:__ 2023
 
+__Developer:__ Tango Gameworks
+
 __Publisher:__ Bethesda Softworks
 
 __Copies sold:__ 3 milion copies (2024) 
@@ -48,7 +50,9 @@ __Engine:__ In-House engine
 
 __Year of production:__ 2020
 
-__Publisher:__ Sucker Punch
+__Developer:__ Sucker Punch
+
+__Publisher:__ Sony Interactive Entertainment
 
 __Copies sold:__ ~10 milion copies (2025) 
 
@@ -82,7 +86,9 @@ __Engine:__ Unity
 
 __Year of production:__ 2024
 
-__Publisher:__ Nomada Studio
+__Developer:__ Nomada Studio
+
+__Publisher:__ Devolver Digital
 
 __Tech links:__
 
@@ -96,6 +102,8 @@ __Tech links:__
 __Engine:__ Northlight 
 
 __Year of production:__ 2023
+
+__Developer:__ Remedy Entertainment
 
 __Publisher:__ Epic Games
 
@@ -111,3 +119,24 @@ __Tech links:__
 
 [Mesh Shaders](https://www.youtube.com/watch?v=3EMdMD1PsgY)
 
+## Abzu
+
+{% include figure image_path="/assets/images/Abzu.png" alt="" caption="__Game:__ Abzu" %}
+
+__Engine:__ Unreal Engine 4 
+
+__Year of production:__ 2016
+
+__Developer:__ Giant Squid
+
+__Publisher:__ 505 Games
+
+__Copies sold:__ 816 k copies (2025) 
+
+__Core team:__ ~13 peoples
+
+__Earns:__ 9,7 mln $ gross
+
+__Tech links:__
+
+[Creating the Art of ABZU](https://www.youtube.com/watch?v=l9NX06mvp2E)
