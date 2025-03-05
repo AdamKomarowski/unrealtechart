@@ -71,3 +71,20 @@ __Tech links:__
 [Ghost of Tsushima SIGGRAPH Talks](https://www.glowybits.com/blog/2022/12/18/ghost_talks/)
 
 [Concept Art](https://www.ianchiew.com/ghost-of-tsushima)
+
+
+
+## Neva
+
+{% include figure image_path="/assets/images/Neva.png" alt="" caption="__Game:__ Neva" %}
+
+__Engine:__ Unity
+
+__Year of production:__ 2024
+
+__Publisher:__ Nomada Studio
+
+__Tech links:__
+
+[Neva | Behind the Scenes](https://www.youtube.com/watch?v=SfwXTZbG0JE)
+
