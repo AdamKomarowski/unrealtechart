@@ -3,7 +3,7 @@ title: "Books"
 excerpt: ""
 permalink: "/book/Games_Books_and_Events/books/"
 ---
-## MiraceMorning.png
+## Mirace Morning
 
 {% include figure image_path="/assets/images/MiraceMorning.png" alt="" caption="__Book:__ Mirace Morning" %}
 
