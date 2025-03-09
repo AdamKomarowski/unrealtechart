@@ -161,7 +161,7 @@ __Production costs:__ 10-150 % mln $
 
 __Tech links:__
 
-[Procedural Animation'](https://www.gameanim.com/2018/01/24/last-guardian-procedural-animation/)
+[Procedural Animation](https://www.gameanim.com/2018/01/24/last-guardian-procedural-animation/)
 
 
 ## Gris
@@ -178,4 +178,4 @@ __Publisher:__ Devolver Digital
 
 __Tech links:__
 
-[The Creativity Process behind GRIS](https://www.youtube.com/watch?v=rnjKTrIuk7Q&ab_channel=ACMSIGCHI)
+[The Creativity Process](https://www.youtube.com/watch?v=rnjKTrIuk7Q&ab_channel=ACMSIGCHI)
