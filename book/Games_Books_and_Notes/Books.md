@@ -50,7 +50,41 @@ __Conclusions:__
 Assign them priority levels from A downward, then tackle them starting with the most important ones.
 
 
+## Aski Iwata
+
+{% include figure image_path="/assets/images/AskiIwata.png" alt="" caption="__Book:__ AskiIwata" %}
+
+__Conclusions:__
+
+- Passion and Humility: Despite his role as Nintendo's president, Iwata identified foremost as a gamer, reflecting his deep passion and modesty.
+
+- Innovative Thinking: He championed creativity within constraints, leading to groundbreaking products like the Nintendo DS and Wii.
+
+- Empathetic Leadership: Iwata prioritized understanding and supporting his team, believing that a company's success stems from its employees' well-being.
+
+- Continuous Improvement: He encouraged focusing on solutions and embracing ongoing development, rather than dwelling on unsolvable problems.
 
 
+## Can't Hurt Me
 
+{% include figure image_path="/assets/images/Canthurtme.png" alt="" caption="__Book:__ Canthurtme" %}
+
+__Conclusions:__
+
+- Embrace Pain for Growth: Goggins teaches that discomfort and hardship are essential for building mental resilience.
+
+
+- The 40% Rule: When you think you're done, you're only at about 40% of your true potential.
+
+
+- Callous Your Mind: By regularly challenging yourself with tasks that push you out of your comfort zone, you can strengthen your mental toughness.
+
+
+- Accountability & Brutal Honesty: Facing your weaknesses head-on—and writing them down—helps you overcome self-doubt.
+
+
+- The Cookie Jar Technique: Remember your past victories to fuel your drive when times get tough.
+
+
+- No Quick Fixes: Success is achieved through relentless hard work, discipline, and an unwavering commitment to self-improvement.
 
