@@ -179,3 +179,29 @@ __Publisher:__ Devolver Digital
 __Tech links:__
 
 [The Creativity Process](https://www.youtube.com/watch?v=rnjKTrIuk7Q&ab_channel=ACMSIGCHI)
+
+
+
+## Stellar Blade
+
+{% include figure image_path="/assets/images/StellarBlade.png" alt="" caption="__Game:__ Stellar Blade" %}
+
+__Engine:__ Unreal Engine 4
+
+__Year of production:__ 2024
+
+__Developer:__ SHIFT UP Corporation
+
+__Publisher:__ Sony Interactive Entertainment
+
+__Copies sold:__ ~1 milion copies (2025) 
+
+__Core team:__ ~311 peoples
+
+__Earns:__ 43 mln $ gross
+
+__Production costs:__ 50 mln $
+
+__Tech links:__
+
+[Digital Foundry Tech Review](https://www.youtube.com/watch?v=qhCXilVBVv0&ab_channel=DigitalFoundry)
