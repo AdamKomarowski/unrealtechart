@@ -162,3 +162,20 @@ __Production costs:__ 10-150 % mln $
 __Tech links:__
 
 [Procedural Animation'](https://www.gameanim.com/2018/01/24/last-guardian-procedural-animation/)
+
+
+## Gris
+
+{% include figure image_path="/assets/images/Gris.png" alt="" caption="__Game:__ Gris" %}
+
+__Engine:__ Unity
+
+__Year of production:__ 2018
+
+__Developer:__ Nomada Studio
+
+__Publisher:__ Devolver Digital
+
+__Tech links:__
+
+[The Creativity Process behind GRIS](https://www.youtube.com/watch?v=rnjKTrIuk7Q&ab_channel=ACMSIGCHI)
