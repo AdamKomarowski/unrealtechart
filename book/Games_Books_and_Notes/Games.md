@@ -140,3 +140,25 @@ __Earns:__ 9,7 mln $ gross
 __Tech links:__
 
 [Creating the Art of ABZU](https://www.youtube.com/watch?v=l9NX06mvp2E)
+
+## The Last Guardian 
+
+{% include figure image_path="/assets/images/TheLastGuardian.png" alt="" caption="__Game:__ The Last Guardian" %}
+
+__Engine:__ In-House engine 
+
+__Year of production:__ 2007
+
+__Developer:__ Japan Studio and GenDesign
+
+__Publisher:__ Sony Interactive Entertainment
+
+__Copies sold:__ ~2 milion copies (2025) 
+
+__Core team:__ ~20-30 peoples
+
+__Production costs:__ 10-150 % mln $
+
+__Tech links:__
+
+[Procedural Animation'](https://www.gameanim.com/2018/01/24/last-guardian-procedural-animation/)
