@@ -4,43 +4,29 @@ excerpt: ""
 permalink: "/book/Games_Books_and_Events/games/"
 ---
 
+## Alan Wake 2
 
-## Hi-Fi Rush
+{% include figure image_path="/assets/images/AlanWake2.png" alt="" caption="__Game:__ Alan Wake 2" %}
 
-{% include figure image_path="/assets/images/hifirush.png" alt="" caption="__Game:__ Hi-Fi Rush" %}
-
-__Engine:__ Unreal Engine 4 
+__Engine:__ Northlight 
 
 __Year of production:__ 2023
 
-__Developer:__ Tango Gameworks
+__Developer:__ Remedy Entertainment
 
-__Publisher:__ Bethesda Softworks
+__Publisher:__ Epic Games
 
-__Copies sold:__ 3 milion copies (2024) 
+__Copies sold:__ ~2 milion copies (2025) 
 
-__Core team:__ ~100 peoples
+__Core team:__ ~280 peoples
 
-__Earns:__ 36 mln $ gross and net 11 mln $
-
-- Tango's parent company ZeniMax Media was acquired by Microsoft for US$7.5 billion in March 2021 and became part of Microsoft Gaming
-
-__Production costs:__ ?
-
-__Notes:__ Founded in Japan, Krafton acquired Tango Gameworks
-
-__Private Thoughts:__ 
-Interesting cell shading, until the first 3 hours I felt that I just wanted to quit and not go back but after that time when I had three of my other friends the fun started, was playful. 
-The last two chapters were so cool! When my team came to play was so fun but on the other hand 
-when I got 3 of my teammates the game was slightly too easy compared to the first half of the game. 
+__Production costs:__ 70 mln $
 
 __Tech links:__
 
-[3D Toon Rendering in 'Hi-Fi RUSH](https://www.youtube.com/watch?v=gdBACyIOCtc)
+[GPU driven Rendering with Mesh Shaders](https://www.youtube.com/watch?v=EtX7WnFhxtQ)
 
-
-[Developing 'Hi-Fi RUSH' Backwards and Finding Our Positive Gameplay Loop](https://www.youtube.com/watch?v=pG4UxqRMNX0)
-
+[Mesh Shaders](https://www.youtube.com/watch?v=3EMdMD1PsgY)
 
 ## Ghost of Tsushima
 
@@ -76,8 +62,6 @@ __Tech links:__
 
 [Concept Art](https://www.ianchiew.com/ghost-of-tsushima)
 
-
-
 ## Neva
 
 {% include figure image_path="/assets/images/Neva.png" alt="" caption="__Game:__ Neva" %}
@@ -93,31 +77,6 @@ __Publisher:__ Devolver Digital
 __Tech links:__
 
 [Behind the Scene](https://www.youtube.com/watch?v=SfwXTZbG0JE)
-
-
-## Alan Wake 2
-
-{% include figure image_path="/assets/images/AlanWake2.png" alt="" caption="__Game:__ Alan Wake 2" %}
-
-__Engine:__ Northlight 
-
-__Year of production:__ 2023
-
-__Developer:__ Remedy Entertainment
-
-__Publisher:__ Epic Games
-
-__Copies sold:__ ~2 milion copies (2025) 
-
-__Core team:__ ~280 peoples
-
-__Production costs:__ 70 mln $
-
-__Tech links:__
-
-[GPU driven Rendering with Mesh Shaders](https://www.youtube.com/watch?v=EtX7WnFhxtQ)
-
-[Mesh Shaders](https://www.youtube.com/watch?v=3EMdMD1PsgY)
 
 ## Abzu
 
@@ -163,7 +122,6 @@ __Tech links:__
 
 [Procedural Animation](https://www.gameanim.com/2018/01/24/last-guardian-procedural-animation/)
 
-
 ## Gris
 
 {% include figure image_path="/assets/images/Gris.png" alt="" caption="__Game:__ Gris" %}
@@ -179,8 +137,6 @@ __Publisher:__ Devolver Digital
 __Tech links:__
 
 [The Creativity Process](https://www.youtube.com/watch?v=rnjKTrIuk7Q&ab_channel=ACMSIGCHI)
-
-
 
 ## Stellar Blade
 
@@ -205,3 +161,40 @@ __Production costs:__ 50 mln $
 __Tech links:__
 
 [Digital Foundry Tech Review](https://www.youtube.com/watch?v=qhCXilVBVv0&ab_channel=DigitalFoundry)
+
+## Hi-Fi Rush
+
+{% include figure image_path="/assets/images/hifirush.png" alt="" caption="__Game:__ Hi-Fi Rush" %}
+
+__Engine:__ Unreal Engine 4 
+
+__Year of production:__ 2023
+
+__Developer:__ Tango Gameworks
+
+__Publisher:__ Bethesda Softworks
+
+__Copies sold:__ 3 milion copies (2024) 
+
+__Core team:__ ~100 peoples
+
+__Earns:__ 36 mln $ gross and net 11 mln $
+
+- Tango's parent company ZeniMax Media was acquired by Microsoft for US$7.5 billion in March 2021 and became part of Microsoft Gaming
+
+__Production costs:__ ?
+
+__Notes:__ Founded in Japan, Krafton acquired Tango Gameworks
+
+__Private Thoughts:__ 
+Interesting cell shading, until the first 3 hours I felt that I just wanted to quit and not go back but after that time when I had three of my other friends the fun started, was playful. 
+The last two chapters were so cool! When my team came to play was so fun but on the other hand 
+when I got 3 of my teammates the game was slightly too easy compared to the first half of the game. 
+
+__Tech links:__
+
+[3D Toon Rendering in 'Hi-Fi RUSH](https://www.youtube.com/watch?v=gdBACyIOCtc)
+
+
+[Developing 'Hi-Fi RUSH' Backwards and Finding Our Positive Gameplay Loop](https://www.youtube.com/watch?v=pG4UxqRMNX0)
+
