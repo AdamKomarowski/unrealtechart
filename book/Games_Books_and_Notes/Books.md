@@ -3,18 +3,6 @@ title: "Books"
 excerpt: ""
 permalink: "/book/Games_Books_and_Events/books/"
 ---
-List of books I've read—here are brief summaries of a few of them:
-
-- TEST BOOK 1
-
-- TEST BOOK 2
-
-
-
-
-
-
-
 
 ## Mirace Morning
 
