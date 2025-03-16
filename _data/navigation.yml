@@ -29,10 +29,10 @@ book:
         url: /book/Games_Books_and_Events/books/
       - title: "Games"
         url: /book/Games_Books_and_Events/games/
-      - title: "Game James"
-        url: /book/Games_Books_and_Events/game-james/
-      - title: "Conferences"
-        url: /book/Games_Books_and_Events/conferences/
+     # - title: "Game James"
+      #  url: /book/Games_Books_and_Events/game-james/
+     # - title: "Conferences"
+     #   url: /book/Games_Books_and_Events/conferences/
 
   - title: "Resources"
     url: /book/resources/
