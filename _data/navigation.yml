@@ -16,12 +16,12 @@ main:
 book:
   - title: "Introduction"
     url: /book/
-  - title: "Profiling"
-    url: /book/process/measuring-performance/
-  - title: "Python/C++"
-    url: /book/coding/
-  - title: "Tools"
-    url: /book/tools/
+  #- title: "Profiling"
+   # url: /book/process/measuring-performance/
+  #- title: "Python/C++"
+  #  url: /book/coding/
+  #- title: "Tools"
+  #  url: /book/tools/
   - title: "Games Books and Events"
     url: /book/Games_Books_and_Events/
     children:
