@@ -9,7 +9,7 @@ main:
   #- title: "Tools"
    # url: /book/tools/
   - title: "Games, Books and Events"
-    url: /book/Games_Books_and_Events/
+    url: /book/Games_Books_and_Events/books/
   - title: "About"
     url: /book/about/
 
@@ -23,7 +23,7 @@ book:
   #- title: "Tools"
   #  url: /book/tools/
   - title: "Games Books and Events"
-    url: /book/Games_Books_and_Events/
+    url: /book/Games_Books_and_Events/books/
     children:
       - title: "Books"
         url: /book/Games_Books_and_Events/books/
