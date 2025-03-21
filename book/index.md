@@ -15,6 +15,7 @@ _Note:_ The book is a work in progress. Some chapters serve as a placeholder for
 
 Enjoy the content,
 
-Adam Komarowski
+Adam Komarowski 
 
-[Onwards to next chapter! →]({{ site.baseurl }}{% link book/process/measuring-performance.md %}){: .btn .btn--next}
+  
+# [Onwards to next chapter! →]({{ site.baseurl }}{% link book/process/measuring-performance.md %}){: .btn .btn--next}
