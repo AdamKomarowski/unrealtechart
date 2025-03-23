@@ -186,12 +186,58 @@ COMMON PROBLEMS AND FIX
 
 These areas will not bounce light and will appear black in reflections. Issues like this can be fixed by increasing the number of Cards used with Max Lumen Mesh Cards, but that may not solve all issues. Alternatively, breaking the mesh into less complex pieces can resolve these types of issues as well.
 
+## General requirements to work with Lumen:
+
+- Meshes divided into modules
+- Correct Distance Fields
+- Proper materials and texture brightness
+- Optimal number of Mesh Cards
+- Correct light setup
+- Avoiding small and bright surfaces
+- Avoiding non-uniform scaling and scaling greater than 2
 
 
-References:
+## Optimization
+
+- Custom Scalability 
+- Lumen Reflection Roughness Threshold Optimization:
+
+Involves controlling when accurate reflection rays are traced and when the system falls back to a simplified reflection model.
+
+Key Points:
+- r.Lumen.Reflection.MaxRoughnessToTrace – This sets the roughness threshold above which pixels will use a rough specular approximation instead of tracing dedicated reflection rays.
+A lower value means more precise reflections but lower performance.
+A higher value means more approximations, which boosts performance but degrades reflection quality.
+- r.Lumen.Reflections.MaxRoughnessToTraceForFoliage – A separate roughness threshold for materials using the Two Sided Foliage or Subsurface shading models (e.g., leaves, grass).
+Performance Optimization on Foliage
+Reflections on foliage are generally hard to see, so they can be optimized without significant quality loss.
+Setting r.Lumen.Reflections.MaxRoughnessToTraceForFoliage = 0 effectively disables ray tracing for reflections on foliage, which can significantly improve performance.
+
+In summary: You can enhance Lumen's performance by limiting precise reflections on materials with high roughness, especially for foliage where reflections are less noticeable.
+
+- Replacing Lumen Reflections with Screen Space Reflections:
+Reflection costs can be more aggressively reduced by replacing Lumen Reflections with Screen Space Reflections (SSR). This can be achieved by setting r.Lumen.Reflections.Allow=0.
+
+- Surface Cache Tile Updates
+Lumen Scene Lighting updates both the direct and indirect lighting in the surface cache. Performance depends on the portion of the surface cache updated each frame. You can adjust the update speed for direct and indirect lighting separately using r.LumenScene.DirectLighting.MaxLightsPerTile and r.LumenScene.Radiosity.UpdateFactor.
+
+Lumen Scene Lighting selects a small subset of the most important lights for each surface cache tile, making its performance less sensitive to the total number of lights in the scene. The number of lights per tile can be controlled by r.LumenScene.DirectLighting.MaxLightsPerTile.
+
+- Profiling Lumen
+
+LumenGPU
+
+{% include figure image_path="/assets/images/Lumen/LumenGPU.png" alt="" caption="__Comments:__ Lumen Porifling" %}
+
+
+References or what you should read:
 
 (https://www.youtube.com/watch?v=nlbJwMoj1Dg&ab_channel=UnrealEngine)
 
 (https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine)
 
 (https://www.unrealengine.com/en-US/blog/lumen-in-ue5-let-there-be-light)
+
+(https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-technical-details-in-unreal-engine?application_version=5.2)
+
+(https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-performance-guide-for-unreal-engine?application_version=5.2)
