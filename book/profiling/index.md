@@ -179,6 +179,8 @@ COMMON PROBLEMS AND FIX
 2. You can also try to increase atenuation radius of the light and reduce emissive intensity.
 3. Add eye adaptation to the emissive.
 
+{% include figure image_path="/assets/images/Lumen/EyeAdaptation.png" alt="" caption="__Comments:__ Eye Adaptation" %}
+
 
 - If in Lumen -> Surface Cache you will have Black meshes:
 
@@ -241,3 +243,5 @@ References or what you should read:
 (https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-technical-details-in-unreal-engine?application_version=5.2)
 
 (https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-performance-guide-for-unreal-engine?application_version=5.2)
+
+[Lumen Commands](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-console-variables-reference)
