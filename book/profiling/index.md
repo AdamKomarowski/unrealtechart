@@ -99,6 +99,15 @@ r.RayTracing.ForceAllRayTracingEffects -1–1
 
 ## Unreal Engine Lumen:
 
+{% include figure image_path="/assets/images/Lumen/LumenEnabled.png" alt="" caption="__Comments:__ Lumen Enabled" %}
+
+{% include figure image_path="/assets/images/Lumen/ReflectionMethod.png" alt="" caption="__Comments:__ Reflection Method" %}
+
+{% include figure image_path="/assets/images/Lumen/GenerateMeshDistanceField.png" alt="" caption="__Comments:__ Generate Mesh Distance Field" %}
+
+{% include figure image_path="/assets/images/Lumen/RestartEditor.png" alt="" caption="__Comments:__ Restart Editor" %}
+
+
 - Lumen is disabled on Medium and Low settings, which means that fallback setup should be provided for those platforms.
 
 Dynamic GI Method
@@ -120,6 +129,16 @@ How it's work?
 These projection planes or capture positions are called cards, and are generated offline for each mesh. Cards can be visualized with the console command R.Lumen.Vizualize.CardPlacement. Using the card's projection, Lumen then renders the triangle meshes to capture all of the material properties from multiple angles. After the surface cache is populated with material properties, Lumen now has all the volume and surface information it needs. Lumen then calculates direct and indirect lighting. And the result of that is fed back into the surface cache to be used in subsequent frames. These lighting updates are amortized over multiple frames. And this is what allows Lumen to support many dynamic lights and multi bounce global illumination.
 
 {% include figure image_path="/assets/images/Lumen/LumenMesh.png" alt="" %}
+
+After the Surface Cache is populated with material properties, Lumen has all the volume and surface information it needs. It then calculates direct and indirect lighting, and the results are fed back into the Surface Cache to be used in subsequent frames. These lighting updates are amortized over multiple frames, allowing Lumen to support many dynamic lights and multi-bounce global illumination.
+
+It is important to note that volume and surface information are stored separately in the GPU. However, for simplicity, we refer to them as a single entity called the Lumen Scene.
+
+You can visualize it using the Lumen Scene View mode. To do this, go to the Viewport and select:
+Show → Visualize → Lumen Scene.
+
+
+
 
 
 HOW WE SHOULD THINK TO WORK WITH LUMEN General Pipeline
