@@ -109,7 +109,9 @@ r.RayTracing.ForceAllRayTracingEffects -1–1
 
 ## How it's works?
 
-{% include figure image_path="/assets/images/Lumen/CarsPreview.png" alt="" caption="__Comments:__ r.Lumen.Visualize.CardPlacement" %}
+{% include figure image_path="/assets/images/Lumen/CarsPreview.png" alt="" caption="__Comments:__ r.Lumen.Visualize.CardPlacement 1" %}
+
+By default, Lumen only places 12 Cards on a mesh, but you can increase that amount by setting Max Lumen Mesh Cards in the Build Settings of the Static Mesh Editor. Adjusting the number of cards is useful for more complex interiors or single meshes with irregular shapes.
 
 These projection planes or capture positions are called cards, and are generated offline for each mesh. Cards can be visualized with the console command R.Lumen.Vizualize.CardPlacement. Using the card's projection, Lumen then renders the triangle meshes to capture all of the material properties from multiple angles. After the surface cache is populated with material properties, Lumen now has all the volume and surface information it needs. Lumen then calculates direct and indirect lighting. And the result of that is fed back into the surface cache to be used in subsequent frames. These lighting updates are amortized over multiple frames. And this is what allows Lumen to support many dynamic lights and multi bounce global illumination.
 
@@ -176,6 +178,13 @@ COMMON PROBLEMS AND FIX
 1. If emmisive object is to small or to bright. 
 2. You can also try to increase atenuation radius of the light and reduce emissive intensity.
 3. Add eye adaptation to the emissive.
+
+
+- If in Lumen -> Surface Cache you will have Black meshes:
+
+{% include figure image_path="/assets/images/Lumen/LumenBlackMeshes.png" alt="" caption="__Comments:__ Balck Mesh" %}
+
+These areas will not bounce light and will appear black in reflections. Issues like this can be fixed by increasing the number of Cards used with Max Lumen Mesh Cards, but that may not solve all issues. Alternatively, breaking the mesh into less complex pieces can resolve these types of issues as well.
 
 
 
