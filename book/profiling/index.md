@@ -14,7 +14,7 @@ Lumen is a total amount of light emitted by a source in all directions.
 Lux (illuminance flux):
 Lux is equal to one lumen per sqare meter and is the total amount of light that falls onto a surface. 
 
-## LIGHTS:
+## Lights:
 
 In video games, light is simulated as rays that travel from a light source. Game engines like Unreal Engine use techniques such as ray tracing to accurately render reflections, refractions, and shadows. While light in reality is an electromagnetic wave, in computer graphics, it is treated as straight lines—rays—that determine how light interacts with objects in the scene.
 
@@ -63,7 +63,13 @@ If you prioritize performance, stick with Software Ray Tracing.
 
 For the highest quality, enable Hardware Ray Tracing and fine-tune the Quality Level in the Lumen settings.
 
+## Unreal Engine Lumen:
 
+- Lumen is disabled on Medium and Low settings, which means that fallback setup should be provided for those platforms.
+
+- Lumen is not supported on previous-generation consoles, including PlayStation 4 and Xbox One.
+
+- Mesh Distance Fields should be enabled for Lumen to work (r.GenerateMeshDistanceFields=True).
 
 
 
