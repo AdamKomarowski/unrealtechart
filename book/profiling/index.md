@@ -234,14 +234,14 @@ LumenGPU
 
 References or what you should read:
 
-(https://www.youtube.com/watch?v=nlbJwMoj1Dg&ab_channel=UnrealEngine)
+[Lumen](https://www.youtube.com/watch?v=nlbJwMoj1Dg&ab_channel=UnrealEngine)
 
-(https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine)
+[Lumen Global Illumination and Reflections in UE](https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine)
 
-(https://www.unrealengine.com/en-US/blog/lumen-in-ue5-let-there-be-light)
+[Lumen in UE5](https://www.unrealengine.com/en-US/blog/lumen-in-ue5-let-there-be-light)
 
-(https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-technical-details-in-unreal-engine?application_version=5.2)
+[Lumen Technical Details](https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-technical-details-in-unreal-engine?application_version=5.2)
 
-(https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-performance-guide-for-unreal-engine?application_version=5.2)
+[Lumen Performance Guide](https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-performance-guide-for-unreal-engine?application_version=5.2)
 
 [Lumen Commands](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-console-variables-reference)
