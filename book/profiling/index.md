@@ -14,10 +14,13 @@ Lumen is a total amount of light emitted by a source in all directions.
 Lux (illuminance flux):
 Lux is equal to one lumen per sqare meter and is the total amount of light that falls onto a surface. 
 
-LIGHTS:
+## LIGHTS:
+
 In video games, light is simulated as rays that travel from a light source. Game engines like Unreal Engine use techniques such as ray tracing to accurately render reflections, refractions, and shadows. While light in reality is an electromagnetic wave, in computer graphics, it is treated as straight lines—rays—that determine how light interacts with objects in the scene.
 
 In the context of Unreal Engine 5, Lumen is an advanced Global Illumination (GI) and ray-traced reflections system that dynamically simulates light behavior in real-time. Regarding ray tracing, Lumen operates in two main modes:
+
+## ## Lumen has two Ray Tracing modes:
 
 📊 1. Software Ray Tracing (Software RT)
 Description: This mode does not require dedicated ray tracing hardware (it works on GPUs without RT cores). It uses screen-space techniques and voxelization to simulate reflections and light propagation.
@@ -59,6 +62,10 @@ Hybrid Modes: You can mix modes, e.g., use Software RT for Global Illumination a
 If you prioritize performance, stick with Software Ray Tracing.
 
 For the highest quality, enable Hardware Ray Tracing and fine-tune the Quality Level in the Lumen settings.
+
+
+
+
 
 
 
