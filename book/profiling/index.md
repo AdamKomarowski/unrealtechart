@@ -107,6 +107,22 @@ r.RayTracing.ForceAllRayTracingEffects -1–1
 
 {% include figure image_path="/assets/images/Lumen/RestartEditor.png" alt="" caption="__Comments:__ Restart Editor" %}
 
+## How it's works?
+
+{% include figure image_path="/assets/images/Lumen/CarsPreview.png" alt="" caption="__Comments:__ r.Lumen.Visualize.CardPlacement" %}
+
+These projection planes or capture positions are called cards, and are generated offline for each mesh. Cards can be visualized with the console command R.Lumen.Vizualize.CardPlacement. Using the card's projection, Lumen then renders the triangle meshes to capture all of the material properties from multiple angles. After the surface cache is populated with material properties, Lumen now has all the volume and surface information it needs. Lumen then calculates direct and indirect lighting. And the result of that is fed back into the surface cache to be used in subsequent frames. These lighting updates are amortized over multiple frames. And this is what allows Lumen to support many dynamic lights and multi bounce global illumination.
+
+{% include figure image_path="/assets/images/Lumen/LumenMesh.png" alt="" %}
+
+After the Surface Cache is populated with material properties, Lumen has all the volume and surface information it needs. It then calculates direct and indirect lighting, and the results are fed back into the Surface Cache to be used in subsequent frames. These lighting updates are amortized over multiple frames, allowing Lumen to support many dynamic lights and multi-bounce global illumination.
+
+It is important to note that volume and surface information are stored separately in the GPU. However, for simplicity, we refer to them as a single entity called the Lumen Scene.
+
+You can visualize it using the Lumen Scene View mode. To do this, go to the Viewport and select:
+Show → Visualize → Lumen Scene.
+
+
 The Mesh Distance Field resolution is determined based on the imported scale of the static mesh.
 
 If you apply significant scaling to placed instances, use the Distance Field Resolution Scale to compensate.
@@ -114,8 +130,6 @@ If you apply significant scaling to placed instances, use the Distance Field Res
 {% include figure image_path="/assets/images/Lumen/GenerateMeshDistanceField.png" alt="" caption="__Comments:__ Mesh Distance Fields Resolution Scale" %}
 
 By default, Lumen traces against each mesh distance field for the first few meters for accuracy, and then traces the merged global distance field for the rest of each ray.
-
-GlobalDistanceFields
 
 {% include figure image_path="/assets/images/Lumen/GlobalDistanceFields.png" alt="" caption="__Comments:__ Global Distance Fields" %}
 
@@ -144,33 +158,17 @@ r.DynamicGlobalIlluminationMethod 0–4
 
 - Mesh Distance Fields should be enabled for Lumen to work (r.GenerateMeshDistanceFields=True).
 
-How it's work?
-
-{% include figure image_path="/assets/images/Lumen/CarsPreview.png" alt="" caption="__Comments:__ r.Lumen.Visualize.CardPlacement" %}
-
-These projection planes or capture positions are called cards, and are generated offline for each mesh. Cards can be visualized with the console command R.Lumen.Vizualize.CardPlacement. Using the card's projection, Lumen then renders the triangle meshes to capture all of the material properties from multiple angles. After the surface cache is populated with material properties, Lumen now has all the volume and surface information it needs. Lumen then calculates direct and indirect lighting. And the result of that is fed back into the surface cache to be used in subsequent frames. These lighting updates are amortized over multiple frames. And this is what allows Lumen to support many dynamic lights and multi bounce global illumination.
-
-{% include figure image_path="/assets/images/Lumen/LumenMesh.png" alt="" %}
-
-After the Surface Cache is populated with material properties, Lumen has all the volume and surface information it needs. It then calculates direct and indirect lighting, and the results are fed back into the Surface Cache to be used in subsequent frames. These lighting updates are amortized over multiple frames, allowing Lumen to support many dynamic lights and multi-bounce global illumination.
-
-It is important to note that volume and surface information are stored separately in the GPU. However, for simplicity, we refer to them as a single entity called the Lumen Scene.
-
-You can visualize it using the Lumen Scene View mode. To do this, go to the Viewport and select:
-Show → Visualize → Lumen Scene.
-
-
-
-
-
-HOW WE SHOULD THINK TO WORK WITH LUMEN General Pipeline
-
-Wat we should avoid with Lumen workflow
 
 USEFULL COMMANDS
 
 - r.LumenScene.Radiosity 0 to 1  -> multiple bounds how many of them (test it)
 - r.Lumen.Visualize.CardPlacement preview of the Mesh Cards
+- r.Lumen.Reflections.SmoothBias – Range from 0 to 1, where 0 means no change in roughness, and 1 makes it fully smooth.
+- r.Lumen.Reflections.ScreenSpaceReconstruction – BRDF reweighting, values of 0 or 1 to disable/enable.
+- r.Lumen.Reflections.BilateralFilter – Denoising, values of 0 or 1 to disable/enable.
+- r.Lumen.Reflections.DownsampleFactor – This reduces the resolution of reflection rendering, values of 1/2/3/4, where 1 is full resolution, 2 is half, and so on.
+- r.Lumen.Reflections.MaxRoughnessToTraceClamp – This controls the maximum roughness value for reflections to be generated, default is 0.4. Lower values help reduce times at the cost of fewer reflections. 0.3 is pretty good.
+- r.Lumen.Reflections.MaxRoughnessToTraceForFoliage – The same as above but for foliage with Two-Sided and Subsurface materials. Default is 0.4, and lowering it to 0.2 is pretty decent.
 
 COMMON PROBLEMS AND FIX
 
