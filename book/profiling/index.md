@@ -20,7 +20,7 @@ In video games, light is simulated as rays that travel from a light source. Game
 
 In the context of Unreal Engine 5, Lumen is an advanced Global Illumination (GI) and ray-traced reflections system that dynamically simulates light behavior in real-time. Regarding ray tracing, Lumen operates in two main modes:
 
-## ## Lumen has two Ray Tracing modes:
+## Lumen has two Ray Tracing modes:
 
 📊 1. Software Ray Tracing (Software RT)
 Description: This mode does not require dedicated ray tracing hardware (it works on GPUs without RT cores). It uses screen-space techniques and voxelization to simulate reflections and light propagation.
