@@ -113,7 +113,13 @@ r.DynamicGlobalIlluminationMethod 0–4
 
 - Mesh Distance Fields should be enabled for Lumen to work (r.GenerateMeshDistanceFields=True).
 
+How it's work?
+
 {% include figure image_path="/assets/images/Lumen/CarsPreview.png" alt="" caption="__Comments:__ r.Lumen.Visualize.CardPlacement" %}
+
+These projection planes or capture positions are called cards, and are generated offline for each mesh. Cards can be visualized with the console command R.Lumen.Vizualize.CardPlacement. Using the card's projection, Lumen then renders the triangle meshes to capture all of the material properties from multiple angles. After the surface cache is populated with material properties, Lumen now has all the volume and surface information it needs. Lumen then calculates direct and indirect lighting. And the result of that is fed back into the surface cache to be used in subsequent frames. These lighting updates are amortized over multiple frames. And this is what allows Lumen to support many dynamic lights and multi bounce global illumination.
+
+{% include figure image_path="/assets/images/Lumen/LumenMesh.png" alt="" %}
 
 
 HOW WE SHOULD THINK TO WORK WITH LUMEN General Pipeline
