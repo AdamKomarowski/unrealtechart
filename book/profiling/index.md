@@ -229,7 +229,7 @@ Lumen Scene Lighting selects a small subset of the most important lights for eac
 
 LumenGPU
 
-{% include figure image_path="/assets/images/Lumen/LumenGPU.png" alt="" caption="__Comments:__ Lumen Porifling" %}
+{% include figure image_path="/assets/images/Lumen/LumenGPU.png" alt="" caption="__Comments:__ Lumen Profiling" %}
 
 
 References or what you should read:
