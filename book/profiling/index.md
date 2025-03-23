@@ -22,7 +22,7 @@ In the context of Unreal Engine 5, Lumen is an advanced Global Illumination (GI)
 
 ## Lumen has two Ray Tracing modes:
 
-📊 1. Software Ray Tracing (Software RT)
+1. Software Ray Tracing (Software RT)
 Description: This mode does not require dedicated ray tracing hardware (it works on GPUs without RT cores). It uses screen-space techniques and voxelization to simulate reflections and light propagation.
 
 Advantages:
@@ -37,7 +37,7 @@ Less accurate reflections (limited to visible objects—prone to screen-space ar
 
 Reduced precision in complex scenes with multiple reflections.
 
-💻 2. Hardware Ray Tracing (Hardware RT)
+2. Hardware Ray Tracing (Hardware RT)
 Description: This mode fully utilizes ray tracing hardware (e.g., NVIDIA RTX or AMD RDNA 2) to perform ray calculations.
 
 Advantages:
@@ -52,12 +52,12 @@ Higher GPU workload.
 
 Requires modern GPUs with ray tracing support.
 
-🎯 How Does Lumen Relate to Ray Tracing?
+How Does Lumen Relate to Ray Tracing?
 Adaptive Approach: Lumen automatically chooses the appropriate technique based on settings and hardware—using Software RT when possible and switching to Hardware RT for more demanding effects.
 
 Hybrid Modes: You can mix modes, e.g., use Software RT for Global Illumination and Hardware RT for Reflections to balance performance and quality.
 
-🔧 Practical Tip:
+Practical Tip:
 
 If you prioritize performance, stick with Software Ray Tracing.
 
@@ -113,7 +113,7 @@ r.DynamicGlobalIlluminationMethod 0–4
 
 - Mesh Distance Fields should be enabled for Lumen to work (r.GenerateMeshDistanceFields=True).
 
-
+{% include figure image_path="/assets/images/Lumen/CarsPreview.png" alt="" caption="__Comments:__ r.Lumen.Visualize.CardPlacement" %}
 
 
 HOW WE SHOULD THINK TO WORK WITH LUMEN General Pipeline
