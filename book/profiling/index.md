@@ -63,14 +63,55 @@ If you prioritize performance, stick with Software Ray Tracing.
 
 For the highest quality, enable Hardware Ray Tracing and fine-tune the Quality Level in the Lumen settings.
 
+Commands:
+
+Lumen RT method (SRT\HRT)
+r.Lumen.HardwareRayTracing 0–1
+0 : Software Ray Tracing
+1 : Use Hardware Ray Tracing for Lumen when available, or Software Ray Tracing otherwise. HRT is more expensive.
+
+Reflection Method
+r.ReflectionMethod 0–3
+0 : None
+1 : Lumen
+2 : SSR
+3 : RT Reflections
+
+
+Virtual Shadow Map On\Off
+r.Shadow.Virtual.Enable 0–1
+0 : use old Shadow Map (Cascade shadows)
+1 : Virtual Shadow Map
+
+
+Ray Tracing features On\Off
+
+r.RayTracing.ForceAllRayTracingEffects -1–1
+-1: Do not force (default)
+0: All ray tracing effects disabled
+1: All ray tracing effects enabled
+
+- r.RayTracing.Reflections 0–1
+- r.RayTracing.Shadows 0–1
+- r.RayTracing.AmbientOcclusion 0–1
+
+
+
 ## Unreal Engine Lumen:
 
 - Lumen is disabled on Medium and Low settings, which means that fallback setup should be provided for those platforms.
 
+Dynamic GI Method
+r.DynamicGlobalIlluminationMethod 0–4
+0 : None. Global Illumination can be baked into Lightmaps but no technique will be used for Dynamic Global Illumination.
+1 : Lumen. Use Lumen Global Illumination for all lights, emissive materials casting light and SkyLight Occlusion. Requires ‘Generate Mesh Distance Fields’ enabled for Software Ray Tracing and ‘Support Hardware Ray Tracing’ enabled for Hardware Ray Tracing.
+2 : SSGI. Standalone Screen Space Global Illumination. Low cost, but limited by screen space information.
+3 : RTGI. Ray Traced Global Illumination technique. Deprecated, use Lumen Global Illumination instead.
+4 : Plugin. Use a plugin for Global Illumination.
+
 - Lumen is not supported on previous-generation consoles, including PlayStation 4 and Xbox One.
 
 - Mesh Distance Fields should be enabled for Lumen to work (r.GenerateMeshDistanceFields=True).
-
 
 
 
@@ -81,7 +122,15 @@ Wat we should avoid with Lumen workflow
 
 USEFULL COMMANDS
 
+- r.LumenScene.Radiosity 0 to 1  -> multiple bounds how many of them (test it)
+- r.Lumen.Visualize.CardPlacement preview of the Mesh Cards
+
 COMMON PROBLEMS AND FIX
+
+- Lumens flickering/noise: 
+1. If emmisive object is to small or to bright. 
+2. You can also try to increase atenuation radius of the light and reduce emissive intensity.
+3. Add eye adaptation to the emissive.
 
 
 
@@ -90,3 +139,5 @@ References:
 https://www.youtube.com/watch?v=nlbJwMoj1Dg&ab_channel=UnrealEngine
 
 https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine
+
+https://www.unrealengine.com/en-US/blog/lumen-in-ue5-let-there-be-light
