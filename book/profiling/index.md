@@ -107,6 +107,28 @@ r.RayTracing.ForceAllRayTracingEffects -1–1
 
 {% include figure image_path="/assets/images/Lumen/RestartEditor.png" alt="" caption="__Comments:__ Restart Editor" %}
 
+The Mesh Distance Field resolution is determined based on the imported scale of the static mesh.
+
+If you apply significant scaling to placed instances, use the Distance Field Resolution Scale to compensate.
+
+{% include figure image_path="/assets/images/Lumen/GenerateMeshDistanceField.png" alt="" caption="__Comments:__ Mesh Distance Fields Resolution Scale" %}
+
+By default, Lumen traces against each mesh distance field for the first few meters for accuracy, and then traces the merged global distance field for the rest of each ray.
+
+GlobalDistanceFields
+
+{% include figure image_path="/assets/images/Lumen/GlobalDistanceFields.png" alt="" caption="__Comments:__ Global Distance Fields" %}
+
+This approach is used for objects farther from the camera, allowing our traces to be much faster and less dependent on scene complexity.
+
+Scenes that contain areas with many small objects packed together should consider baking these into a single mesh or setting the software tracing mode to Global Traces. This may reduce overall quality but will improve performance.
+
+{% include figure image_path="/assets/images/Lumen/GDSF.png" alt="" caption="__Comments:__ Global Distance Fields" %}
+
+Scenes that have areas with many small objects packed together should consider baking them into a single mesh or setting the software tracing mode to Global Traces. This may reduce overall quality but will improve performance.
+
+{% include figure image_path="/assets/images/Lumen/GlobalTracing.png" alt="" caption="__Comments:__ Global Global Tracing" %}
+
 
 - Lumen is disabled on Medium and Low settings, which means that fallback setup should be provided for those platforms.
 
