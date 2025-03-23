@@ -181,8 +181,8 @@ COMMON PROBLEMS AND FIX
 
 References:
 
-https://www.youtube.com/watch?v=nlbJwMoj1Dg&ab_channel=UnrealEngine
+(https://www.youtube.com/watch?v=nlbJwMoj1Dg&ab_channel=UnrealEngine)
 
-https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine
+(https://dev.epicgames.com/documentation/en-us/unreal-engine/lumen-global-illumination-and-reflections-in-unreal-engine)
 
-https://www.unrealengine.com/en-US/blog/lumen-in-ue5-let-there-be-light
+(https://www.unrealengine.com/en-US/blog/lumen-in-ue5-let-there-be-light)
