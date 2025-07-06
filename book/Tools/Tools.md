@@ -28,6 +28,8 @@ Video Tutorials
 
 How to Use the BugIt Command in Unreal Engine
 
+{% capture tutorialvideo %}S8XLTxFsikA&showinfo=1{% endcapture %} {% include video id=tutorialvideo provider="youtube" %}
+
 Tool for Unreal Engine: Generate Lightmap UVs (Blueprints)
 
 Tool for Unreal Engine: Cast Shadows (Blueprints)
