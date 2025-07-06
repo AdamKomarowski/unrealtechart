@@ -1,3 +1,9 @@
+---
+title: "Tools"
+excerpt: ""
+permalink: "book/tools/"
+---
+
 Building Tools in Unreal Engine 5
 
 Welcome to the dedicated hub for tool creation in Unreal Engine 5. To make the learning path as clear—and actionable—as possible, this section is divided into three progressive parts, each building on the lessons of the previous one.
