@@ -48,5 +48,5 @@ Tool for Unreal Engine: Empty Actors (Blueprints)
 
 Tool for Unreal Engine: Duplicated Actors (Blueprints)
 
-{% capture tutorialvideo %}rABhgArqbEU?showinfo=1{% endcapture %}
+{% capture tutorialvideo %}3-jSbxYF1W8?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
