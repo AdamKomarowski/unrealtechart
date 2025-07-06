@@ -12,18 +12,6 @@ Part 1 — Blueprints
 
 We start with UE5’s powerful visual‑scripting system. You’ll learn how to prototype ideas rapidly, expose parameters for designers, and iterate without recompiling. Expect hands‑on demos that get results on‑screen fast.
 
-Part 2 — Python
-
-With the workflow proven in Blueprints, we’ll graduate to Python scripting. Here we automate repetitive tasks, build pipeline helpers, and interface with external tools. Python lets us glue systems together and speed up daily production chores.
-
-Part 3 — C++
-
-Finally, we translate our prototypes into performant, production‑ready C++. This chapter focuses on writing clean modules, extending the editor, and squeezing every drop of performance out of custom tools.
-
-Whether you’re a technical artist looking to iterate visually, a pipeline engineer automating processes, or a programmer chasing raw speed, you’ll find something valuable in each chapter. Dive in, follow along, and let’s build better tools together!
-
-
-
 Video Tutorials
 
 How to Use the BugIt Command in Unreal Engine
@@ -50,3 +38,14 @@ Tool for Unreal Engine: Duplicated Actors (Blueprints)
 
 {% capture tutorialvideo %}3-jSbxYF1W8?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
+
+
+Part 2 — Python
+
+With the workflow proven in Blueprints, we’ll graduate to Python scripting. Here we automate repetitive tasks, build pipeline helpers, and interface with external tools. Python lets us glue systems together and speed up daily production chores.
+
+Part 3 — C++
+
+Finally, we translate our prototypes into performant, production‑ready C++. This chapter focuses on writing clean modules, extending the editor, and squeezing every drop of performance out of custom tools.
+
+Whether you’re a technical artist looking to iterate visually, a pipeline engineer automating processes, or a programmer chasing raw speed, you’ll find something valuable in each chapter. Dive in, follow along, and let’s build better tools together!
