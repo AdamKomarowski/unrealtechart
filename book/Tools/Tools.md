@@ -1,9 +1,3 @@
----
-title: "Tools"
-excerpt: ""
-permalink: "/book/tools/"
----
-
 Building Tools in Unreal Engine 5
 
 Welcome to the dedicated hub for tool creation in Unreal Engine 5. To make the learning path as clear—and actionable—as possible, this section is divided into three progressive parts, each building on the lessons of the previous one.
@@ -24,8 +18,20 @@ Whether you’re a technical artist looking to iterate visually, a pipeline engi
 
 
 
-# Chapters about early-stage diagnostics methods and approach.
+Video Tutorials
 
-# [The Diagnostic Process]({{ site.baseurl }}{% link book/process/diagnosis.md %}){: .btn .btn--next}
+Below you’ll find the core of this page—five hands‑on video guides embedded front and center. Replace each src value with the actual YouTube embed link (format: https://www.youtube.com/embed/VIDEO_ID).
 
-# [Measuring Performance]({{ site.baseurl }}{% link book/process/measuring-performance.md %}){: .btn .btn--next}
+How to Use the BugIt Command in Unreal Engine
+
+
+
+Tool for Unreal Engine: Generate Lightmap UVs (Blueprints)
+
+{% capture tutorialvideo %}S8XLTxFsikA&showinfo=1{% endcapture %} {% include video id=tutorialvideo provider="youtube" %}
+
+Tool for Unreal Engine: Cast Shadows (Blueprints)
+
+Tool for Unreal Engine: Empty Actors (Blueprints)
+
+Tool for Unreal Engine: Duplicated Actors (Blueprints)
