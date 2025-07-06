@@ -20,11 +20,7 @@ Whether you’re a technical artist looking to iterate visually, a pipeline engi
 
 Video Tutorials
 
-Below you’ll find the core of this page—five hands‑on video guides embedded front and center. Replace each src value with the actual YouTube embed link (format: https://www.youtube.com/embed/VIDEO_ID).
-
 How to Use the BugIt Command in Unreal Engine
-
-
 
 Tool for Unreal Engine: Generate Lightmap UVs (Blueprints)
 
