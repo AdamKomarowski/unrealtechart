@@ -28,13 +28,25 @@ Video Tutorials
 
 How to Use the BugIt Command in Unreal Engine
 
-{% capture tutorialvideo %}S8XLTxFsikA?showinfo=1{% endcapture %}
+{% capture tutorialvideo %}Ntdtf0UY70U?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
 Tool for Unreal Engine: Generate Lightmap UVs (Blueprints)
 
+{% capture tutorialvideo %}S8XLTxFsikA?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
+
 Tool for Unreal Engine: Cast Shadows (Blueprints)
+
+{% capture tutorialvideo %}FwKKHfStsMg?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
 
 Tool for Unreal Engine: Empty Actors (Blueprints)
 
+{% capture tutorialvideo %}jSbxYF1W8?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
+
 Tool for Unreal Engine: Duplicated Actors (Blueprints)
+
+{% capture tutorialvideo %}rABhgArqbEU?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
