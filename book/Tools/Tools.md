@@ -4,8 +4,28 @@ excerpt: ""
 permalink: "/book/tools/"
 ---
 
-Chapters about early-stage diagnostics methods and approach.
+Building Tools in Unreal Engine 5
 
-[The Diagnostic Process]({{ site.baseurl }}{% link book/process/diagnosis.md %}){: .btn .btn--next}
+Welcome to the dedicated hub for tool creation in Unreal Engine 5. To make the learning path as clear—and actionable—as possible, this section is divided into three progressive parts, each building on the lessons of the previous one.
 
-[Measuring Performance]({{ site.baseurl }}{% link book/process/measuring-performance.md %}){: .btn .btn--next}
+Part 1 — Blueprints
+
+We start with UE5’s powerful visual‑scripting system. You’ll learn how to prototype ideas rapidly, expose parameters for designers, and iterate without recompiling. Expect hands‑on demos that get results on‑screen fast.
+
+Part 2 — Python
+
+With the workflow proven in Blueprints, we’ll graduate to Python scripting. Here we automate repetitive tasks, build pipeline helpers, and interface with external tools. Python lets us glue systems together and speed up daily production chores.
+
+Part 3 — C++
+
+Finally, we translate our prototypes into performant, production‑ready C++. This chapter focuses on writing clean modules, extending the editor, and squeezing every drop of performance out of custom tools.
+
+Whether you’re a technical artist looking to iterate visually, a pipeline engineer automating processes, or a programmer chasing raw speed, you’ll find something valuable in each chapter. Dive in, follow along, and let’s build better tools together!
+
+
+
+# Chapters about early-stage diagnostics methods and approach.
+
+# [The Diagnostic Process]({{ site.baseurl }}{% link book/process/diagnosis.md %}){: .btn .btn--next}
+
+# [Measuring Performance]({{ site.baseurl }}{% link book/process/measuring-performance.md %}){: .btn .btn--next}
