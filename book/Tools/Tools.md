@@ -54,7 +54,6 @@ Let’s get started — here’s the video:
 {% capture tutorialvideo %}3-jSbxYF1W8?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-unreal.log(f"Moved {moved_count} actors into folders (including 'Others')")
 <div class="notice--info" markdown="1">
 Code:
 
