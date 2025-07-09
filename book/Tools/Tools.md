@@ -51,7 +51,7 @@ To trigger a Python script directly from an Editor Utility Widget, simply 
 The first chapter of the Python section will focus on practicing how to clean up your Outliner and organize actors into the proper folders.
 Let’s get started — here’s the video:
 
-{% capture tutorialvideo %}3-jSbxYF1W8?showinfo=1{% endcapture %}
+{% capture tutorialvideo %}eg0ZIjq-25o?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
 <div class="notice--info" markdown="1">
