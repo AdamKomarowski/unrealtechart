@@ -54,6 +54,59 @@ Let’s get started — here’s the video:
 {% capture tutorialvideo %}3-jSbxYF1W8?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
+Code:
+
+import unreal
+
+# Create instances for editor utilities
+editor_level_lib  = unreal.EditorLevelLibrary()
+editor_filter_lib = unreal.EditorFilterLibrary()
+
+# Get all actors in the current level
+all_actors = editor_level_lib.get_all_level_actors()
+
+# Helper to filter actors by class
+def filter_by_class(actors, cls):
+    return editor_filter_lib.by_class(actors, cls)
+
+# Filter actors by type
+mapping = {
+    "StaticMeshActors":     filter_by_class(all_actors, unreal.StaticMeshActor),
+    "SkeletalMeshActors":   filter_by_class(all_actors, unreal.SkeletalMeshActor),
+    "Brush":                filter_by_class(all_actors, unreal.Brush),
+    "BlockingVolume":       filter_by_class(all_actors, unreal.BlockingVolume),
+    "DecalActor":           filter_by_class(all_actors, unreal.DecalActor),
+    "Landscape":            filter_by_class(all_actors, unreal.Landscape),
+    "NavModifierVolume":    filter_by_class(all_actors, unreal.NavModifierVolume),
+    "ReflectionCapture":    filter_by_class(all_actors, unreal.ReflectionCapture),
+    "Blueprints":           editor_filter_lib.by_id_name(all_actors, "BP_"),
+    "Lights":               filter_by_class(all_actors, unreal.Light),
+}
+
+moved_count = 0
+
+# Move actors into their corresponding folders if not already in a folder
+for folder_name, actors in mapping.items():
+    unreal.log(f"{folder_name}: {len(actors)} actors")
+    for actor in actors:
+        if actor.get_folder_path() != '':
+            continue  # skip if actor already has a folder
+        actor.set_folder_path(folder_name)
+        unreal.log(f"Actors moved {actor.get_fname()} to {folder_name}")
+        moved_count += 1
+
+# Move all actors without folders into 'Others'
+others = [actor for actor in all_actors if actor.get_folder_path() == '']
+if others:
+    unreal.log(f"Others: {len(others)} actors")
+    for actor in others:
+        actor.set_folder_path("Others")
+        unreal.log(f"Moved {actor.get_fname()} to Others")
+        moved_count += 1
+
+unreal.log(f"Moved {moved_count} actors into folders (including 'Others')")
+
+
 
 Part 3 — C++
 
