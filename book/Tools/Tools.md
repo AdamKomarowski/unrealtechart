@@ -14,27 +14,27 @@ We start with UE5’s powerful visual‑scripting system. You’ll learn how to 
 
 Video Tutorials
 
-How to Use the BugIt Command in Unreal Engine
+# How to Use the BugIt Command in Unreal Engine
 
 {% capture tutorialvideo %}Ntdtf0UY70U?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-Tool for Unreal Engine: Generate Lightmap UVs (Blueprints)
+# Tool for Unreal Engine: Generate Lightmap UVs (Blueprints)
 
 {% capture tutorialvideo %}S8XLTxFsikA?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-Tool for Unreal Engine: Cast Shadows (Blueprints)
+# Tool for Unreal Engine: Cast Shadows (Blueprints)
 
 {% capture tutorialvideo %}FwKKHfStsMg?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-Tool for Unreal Engine: Empty Actors (Blueprints)
+# Tool for Unreal Engine: Empty Actors (Blueprints)
 
 {% capture tutorialvideo %}3-jSbxYF1W8?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-Tool for Unreal Engine: Duplicated Actors (Blueprints)
+# Tool for Unreal Engine: Duplicated Actors (Blueprints)
 
 {% capture tutorialvideo %}rABhgArqbEU?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
@@ -48,8 +48,7 @@ To trigger a Python script directly from an Editor Utility Widget, simply 
 
 {% include figure image_path="/assets/images/Tools/Python/PytonExecute.png" alt="Execute Python Script node in Unreal Engine" %}
 
-The first chapter of the Python section will focus on practicing how to clean up your Outliner and organize actors into the proper folders.
-Let’s get started — here’s the video:
+# Tool for Unreal Engine: Organize Actors into Folders (Python)
 
 {% capture tutorialvideo %}eg0ZIjq-25o?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
