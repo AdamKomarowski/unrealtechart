@@ -48,6 +48,13 @@ To trigger a Python script directly from an Editor Utility Widget, simply 
 
 {% include figure image_path="/assets/images/Tools/Python/PytonExecute.png" alt="Execute Python Script node in Unreal Engine" %}
 
+The first chapter of the Python section will focus on practicing how to clean up your Outliner and organize actors into the proper folders.
+Let’s get started — here’s the video:
+
+{% capture tutorialvideo %}3-jSbxYF1W8?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
+
+
 Part 3 — C++
 
 Finally, we translate our prototypes into performant, production‑ready C++. This chapter focuses on writing clean modules, extending the editor, and squeezing every drop of performance out of custom tools.
