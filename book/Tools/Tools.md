@@ -46,7 +46,7 @@ With the workflow proven in Blueprints, we’ll graduate to Python scripting. He
 
 To trigger a Python script directly from an Editor Utility Widget, simply use the Execute Python Script node.
 
-{% include figure image_path="\assets\images\Tools\Python\PytonExecute.png" alt="Execute Python Script node in Unreal Engine" %}
+{% include figure image_path="/assets/images/Tools/Python/PytonExecute.png" alt="Execute Python Script node in Unreal Engine" %}
 
 Part 3 — C++
 
