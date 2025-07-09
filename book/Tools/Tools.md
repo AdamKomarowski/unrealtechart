@@ -55,23 +55,24 @@ Let’s get started — here’s the video:
 {% include video id=tutorialvideo provider="youtube" %}
 
 <div class="notice--info" markdown="1">
+unreal.log(f"Moved {moved_count} actors into folders (including 'Others')")
 Code:
 
-
+```python
 import unreal
 
-// Create instances for editor utilities
+# Create instances for editor utilities
 editor_level_lib  = unreal.EditorLevelLibrary()
 editor_filter_lib = unreal.EditorFilterLibrary()
 
-// Get all actors in the current level
+# Get all actors in the current level
 all_actors = editor_level_lib.get_all_level_actors()
 
-// Helper to filter actors by class
+# Helper to filter actors by class
 def filter_by_class(actors, cls):
     return editor_filter_lib.by_class(actors, cls)
 
-// Filter actors by type
+# Filter actors by type
 mapping = {
     "StaticMeshActors":     filter_by_class(all_actors, unreal.StaticMeshActor),
     "SkeletalMeshActors":   filter_by_class(all_actors, unreal.SkeletalMeshActor),
@@ -87,7 +88,7 @@ mapping = {
 
 moved_count = 0
 
-// Move actors into their corresponding folders if not already in a folder
+# Move actors into their corresponding folders if not already in a folder
 for folder_name, actors in mapping.items():
     unreal.log(f"{folder_name}: {len(actors)} actors")
     for actor in actors:
@@ -97,7 +98,7 @@ for folder_name, actors in mapping.items():
         unreal.log(f"Actors moved {actor.get_fname()} to {folder_name}")
         moved_count += 1
 
-// Move all actors without folders into 'Others'
+# Move all actors without folders into 'Others'
 others = [actor for actor in all_actors if actor.get_folder_path() == '']
 if others:
     unreal.log(f"Others: {len(others)} actors")
@@ -107,7 +108,7 @@ if others:
         moved_count += 1
 
 unreal.log(f"Moved {moved_count} actors into folders (including 'Others')")
-
+```
 </div>
 
 
