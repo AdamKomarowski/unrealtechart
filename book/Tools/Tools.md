@@ -54,7 +54,9 @@ Let’s get started — here’s the video:
 {% capture tutorialvideo %}3-jSbxYF1W8?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
+<div class="notice--info" markdown="1">
 Code:
+
 
 import unreal
 
@@ -106,6 +108,7 @@ if others:
 
 unreal.log(f"Moved {moved_count} actors into folders (including 'Others')")
 
+</div>
 
 
 Part 3 — C++
