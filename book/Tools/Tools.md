@@ -8,7 +8,7 @@ Building Tools in Unreal Engine 5
 
 Welcome to the dedicated hub for tool creation in Unreal Engine 5. To make the learning path as clear—and actionable—as possible, this section is divided into three progressive parts, each building on the lessons of the previous one.
 
-Part 1 — Blueprints
+# Part 1 — Blueprints
 
 We start with UE5’s powerful visual‑scripting system. You’ll learn how to prototype ideas rapidly, expose parameters for designers, and iterate without recompiling. Expect hands‑on demos that get results on‑screen fast.
 
@@ -19,28 +19,28 @@ Video Tutorials
 {% capture tutorialvideo %}Ntdtf0UY70U?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-# Tool for Unreal Engine: Generate Lightmap UVs (Blueprints)
+# Tool: Generate Lightmap UVs
 
 {% capture tutorialvideo %}S8XLTxFsikA?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-# Tool for Unreal Engine: Cast Shadows (Blueprints)
+# Tool: Cast Shadows
 
 {% capture tutorialvideo %}FwKKHfStsMg?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-# Tool for Unreal Engine: Empty Actors (Blueprints)
+# Tool: Empty Actors
 
 {% capture tutorialvideo %}3-jSbxYF1W8?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-# Tool for Unreal Engine: Duplicated Actors (Blueprints)
+# Tool: Duplicated Actors
 
 {% capture tutorialvideo %}rABhgArqbEU?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
 
-Part 2 — Python
+# Part 2 — Python
 
 With the workflow proven in Blueprints, we’ll graduate to Python scripting. Here we automate repetitive tasks, build pipeline helpers, and interface with external tools. Python lets us glue systems together and speed up daily production chores.
 
@@ -48,7 +48,7 @@ To trigger a Python script directly from an Editor Utility Widget, simply 
 
 {% include figure image_path="/assets/images/Tools/Python/PytonExecute.png" alt="Execute Python Script node in Unreal Engine" %}
 
-# Tool for Unreal Engine: Organize Actors into Folders (Python)
+# Tool: Organize Actors into Folders
 
 {% capture tutorialvideo %}eg0ZIjq-25o?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
@@ -110,7 +110,7 @@ unreal.log(f"Moved {moved_count} actors into folders (including 'Others')")
 </div>
 
 
-Part 3 — C++
+# Part 3 — C++
 
 Finally, we translate our prototypes into performant, production‑ready C++. This chapter focuses on writing clean modules, extending the editor, and squeezing every drop of performance out of custom tools.
 
