@@ -44,6 +44,10 @@ Part 2 — Python
 
 With the workflow proven in Blueprints, we’ll graduate to Python scripting. Here we automate repetitive tasks, build pipeline helpers, and interface with external tools. Python lets us glue systems together and speed up daily production chores.
 
+To trigger a Python script directly from an Editor Utility Widget, simply use the Execute Python Script node.
+
+{% include figure image_path="\assets\images\Tools\Python\PytonExecute.png" alt="Execute Python Script node in Unreal Engine" %}
+
 Part 3 — C++
 
 Finally, we translate our prototypes into performant, production‑ready C++. This chapter focuses on writing clean modules, extending the editor, and squeezing every drop of performance out of custom tools.
