@@ -254,19 +254,18 @@ def place_meshes_along_axis(start_location, selected_assets, spacing):
             location.x += mesh_size.x / 2 + spacing
             previous_mesh_size = mesh_size
 
-# Inputs
-input_x = 0      
-input_y = 0       
-input_z = 0        
-spacing = 50      
+# --- Inputs ---
+input_x = 0      # X start position
+input_y = 0      # Y start position
+input_z = 0      # Z start position
+spacing = 50     # Space between meshes
 
 # Get selected assets from the Content Browser
 selected_assets = unreal.EditorUtilityLibrary.get_selected_assets()
 
 # Run the main function with provided inputs
 place_meshes_along_axis([input_x, input_y, input_z], selected_assets, spacing)
-
-
+```
 </div>
 
 
