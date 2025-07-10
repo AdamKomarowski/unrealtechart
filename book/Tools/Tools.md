@@ -111,7 +111,7 @@ unreal.log(f"Moved {moved_count} actors into folders (including 'Others')")
 
 # Tool: Spawn Skeletal Meshes by LOD
 
-{% capture tutorialvideo %}eg0ZIjq-25o?showinfo=1{% endcapture %}
+{% capture tutorialvideo %}ePSTRDG_dtY?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
 <div class="notice--info" markdown="1">
@@ -192,16 +192,15 @@ place_skeletal_meshes_along_axis(
 ```
 </div>
 
-# Tool: Spawn Static Mesh Actors form Smallest to Biggest
+# Tool: Spawn Static Meshes Sorted by Size
 
-{% capture tutorialvideo %}eg0ZIjq-25o?showinfo=1{% endcapture %}
+{% capture tutorialvideo %}iQHg3VJ5C68?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
 <div class="notice--info" markdown="1">
 Code:
 
 ```python
-
 import unreal
 
 # -------------------------------------------------------------
