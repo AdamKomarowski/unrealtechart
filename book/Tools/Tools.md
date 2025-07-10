@@ -109,6 +109,167 @@ unreal.log(f"Moved {moved_count} actors into folders (including 'Others')")
 ```
 </div>
 
+# Tool: Spawn Skeletal Meshes by LOD
+
+{% capture tutorialvideo %}eg0ZIjq-25o?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
+
+<div class="notice--info" markdown="1">
+Code:
+
+```python
+import unreal
+
+# Helper: Get the number of LODs for a Skeletal Mesh
+def get_lod_count(skel_mesh: unreal.SkeletalMesh) -> int:
+    return len(skel_mesh.get_editor_property("lod_info"))
+
+# Get the bounding box size (AABB) of a Skeletal Mesh
+def get_mesh_size(skel_mesh: unreal.SkeletalMesh) -> unreal.Vector:
+    bounds = skel_mesh.get_bounds()
+    return bounds.box_extent * 2
+
+# Place Skeletal Meshes with all LODs in a grid
+def place_skeletal_meshes_along_axis(
+    start_location=(0, 0, 0),
+    selected_assets=None,
+    x_spacing=100.0,
+    y_spacing=500.0
+):
+    if selected_assets is None:
+        selected_assets = unreal.EditorUtilityLibrary.get_selected_assets()
+
+    location = unreal.Vector(*start_location)
+    first_mesh = True
+
+    for asset in selected_assets:
+        if not isinstance(asset, unreal.SkeletalMesh):
+            continue
+
+        mesh_size = get_mesh_size(asset)
+        lod_count = get_lod_count(asset)
+
+        # Reset X position for each new asset (new row)
+        location.x = start_location[0]
+
+        for lod in range(lod_count):
+            # Spawn the very first LOD of the first mesh at (0, 0, 0) for reference
+            if first_mesh:
+                location = unreal.Vector(0, 0, 0)
+                first_mesh = False
+
+            # ---- Spawn Skeletal Mesh Actor ----
+            actor = unreal.EditorLevelLibrary.spawn_actor_from_class(
+                unreal.SkeletalMeshActor, location
+            )
+
+            sk_comp = actor.get_component_by_class(
+                unreal.SkeletalMeshComponent.static_class()
+            )
+
+            # Assign the mesh and force specific LOD
+            if sk_comp:
+                sk_comp.set_editor_property("skeletal_mesh", asset)
+
+                if hasattr(sk_comp, "set_forced_lod_model"):  # UE 5.3+
+                    sk_comp.set_forced_lod_model(lod + 1)     # 0=auto, 1=LOD0, etc.
+                else:
+                    sk_comp.set_editor_property("forced_lod_model", lod + 1)
+
+            # Move right for the next LOD
+            location.x += mesh_size.x / 2 + x_spacing
+
+        # Move down after all LODs of the current mesh
+        location.y += y_spacing
+
+# inputs
+place_skeletal_meshes_along_axis(
+    start_location=(0, 0, 0),
+    selected_assets=unreal.EditorUtilityLibrary.get_selected_assets(),
+    x_spacing=200.0,
+    y_spacing=1000.0
+)
+```
+</div>
+
+# Tool: Spawn Static Mesh Actors form Smallest to Biggest
+
+{% capture tutorialvideo %}eg0ZIjq-25o?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
+
+<div class="notice--info" markdown="1">
+Code:
+
+```python
+
+import unreal
+
+# -------------------------------------------------------------
+# Helper: Returns the bounding box size of a static mesh
+# -------------------------------------------------------------
+def get_mesh_size(mesh):
+    bounding_box = mesh.get_bounding_box()
+    return bounding_box.max - bounding_box.min
+
+# Helper: Returns the number of LODs for a static mesh
+def get_lod_count(mesh):
+    return mesh.get_num_lods()
+
+# Main: Places selected meshes in order from smallest to largest,
+#       spawns all their LODs in a row along the X-axis
+def place_meshes_along_axis(start_location, selected_assets, spacing):
+    previous_mesh_size = unreal.Vector(0, 0, 0)
+    location = unreal.Vector(*start_location)
+    is_first_mesh = True
+
+    # Sort selected assets by volume (X * Y * Z size)
+    sorted_assets = sorted(
+        selected_assets,
+        key=lambda asset: get_mesh_size(asset).x * get_mesh_size(asset).y * get_mesh_size(asset).z
+    )
+
+    for asset in sorted_assets:
+        if not isinstance(asset, unreal.StaticMesh):
+            continue
+
+        mesh_size = get_mesh_size(asset)
+        lod_count = get_lod_count(asset)
+
+        for lod in range(lod_count):
+            if is_first_mesh:
+                # Place the first mesh at the starting position
+                is_first_mesh = False
+            else:
+                # Move to the next position considering size and spacing
+                location.x += previous_mesh_size.x / 2 + mesh_size.x / 2 + spacing
+
+            # Spawn mesh actor in the level
+            actor = unreal.EditorLevelLibrary.spawn_actor_from_object(asset, location)
+
+            # Force this actor to use a specific LOD
+            sm_component = actor.get_component_by_class(unreal.StaticMeshComponent.static_class())
+            if sm_component:
+                sm_component.set_forced_lod_model(lod)
+
+            # Offset for the next LOD instance
+            location.x += mesh_size.x / 2 + spacing
+            previous_mesh_size = mesh_size
+
+# Inputs
+input_x = 0      
+input_y = 0       
+input_z = 0        
+spacing = 50      
+
+# Get selected assets from the Content Browser
+selected_assets = unreal.EditorUtilityLibrary.get_selected_assets()
+
+# Run the main function with provided inputs
+place_meshes_along_axis([input_x, input_y, input_z], selected_assets, spacing)
+
+
+</div>
+
 
 # Part 3 — C++
 
