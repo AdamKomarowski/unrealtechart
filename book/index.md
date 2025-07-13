@@ -18,4 +18,13 @@ Enjoy the content,
 Adam Komarowski 
 
 
-[Tools on UE →]({{ site.baseurl }}{% link book/Tools/Tools.md %}){: .btn .btn--next}
+[Tools in UE →]({{ site.baseurl }}{% link book/Tools/Tools.md %}){: .btn .btn--next}
+
+
+[Books →]({{ site.baseurl }}{% link book/Games_Books_and_Events/Books.md %}){: .btn .btn--next}
+
+[Games →]({{ site.baseurl }}{% link book/Games_Books_and_Events/Games.md %}){: .btn .btn--next}
+
+[Lumen →]({{ site.baseurl }}{% link book/unrealengine/index.md %}){: .btn .btn--next}
+
+[Resources →]({{ site.baseurl }}{% link book/resources/index.md %}){: .btn .btn--next}
