@@ -172,25 +172,3 @@ Hover must always be last. Plus disabling special color for visited.
     line-height: 1.2;
   }
 }
-
-.btn {
-  display: inline-block;
-  padding: 0.5em 1.2em;
-  background: #007acc;
-  color: #fff !important;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.2s;
-  margin: 1em 0;
-  cursor: pointer;
-}
-
-.btn--next {
-  background: #28a745;
-}
-
-.btn:hover,
-.btn--next:hover {
-  background: #005fa3;
-}
