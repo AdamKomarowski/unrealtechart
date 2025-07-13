@@ -18,4 +18,4 @@ Enjoy the content,
 Adam Komarowski 
 
 
-[Onwards to next chapter! →]({{ site.baseurl }}{% link book/tools.md %}){: .btn .btn--next}
+[Onwards to next chapter! →]({{ site.baseurl }}{% link book/Tools/Tools.md %}){: .btn .btn--next}
