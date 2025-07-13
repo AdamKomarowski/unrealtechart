@@ -21,6 +21,6 @@ Adam Komarowski
 [Tools in UE →]({{ site.baseurl }}{% link book/Tools/Tools.md %}){: .btn .btn--next}
 
 
-[Books →]({{ site.baseurl }}{% link book/Games_Books_and_Events/Books.md %}){: .btn .btn--next}
+[Books →]({{ site.baseurl }}{% link book/Games_Books_and_Notes/Books.md %}){: .btn .btn--next}
 
 
