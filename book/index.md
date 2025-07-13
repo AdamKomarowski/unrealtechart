@@ -25,6 +25,3 @@ Adam Komarowski
 
 [Games →]({{ site.baseurl }}{% link book/Games_Books_and_Notes/Games.md %}){: .btn .btn--next}
 
-[Lumen →]({{ site.baseurl }}{% link book/Games_Books_and_Notes/profiling/index.md %}){: .btn .btn--next}
-
-[Resources →]({{ site.baseurl }}{% link book/Games_Books_and_Notes/resources/index.md %}){: .btn .btn--next}
