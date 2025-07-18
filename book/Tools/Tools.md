@@ -278,7 +278,7 @@ Whether you’re a technical artist looking to iterate visually, a pipeline engi
 
 # Tool: Disable Cast Shadows by Default
 
-{% capture tutorialvideo %}p8nhfjOZa4?showinfo=1{% endcapture %}
+{% capture tutorialvideo %}-p8nhfjOZa4?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
 # Tool: Get Shading Model from Material Instance
