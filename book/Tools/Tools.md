@@ -56,7 +56,7 @@ To trigger a Python script directly from an Editor Utility Widget, simply 
 <div class="notice--info" markdown="1">
 Code:
 
-```python
+
 import unreal
 
 # Create instances for editor utilities
@@ -274,3 +274,19 @@ place_meshes_along_axis([input_x, input_y, input_z], selected_assets, spacing)
 Finally, we translate our prototypes into performant, production‑ready C++. This chapter focuses on writing clean modules, extending the editor, and squeezing every drop of performance out of custom tools.
 
 Whether you’re a technical artist looking to iterate visually, a pipeline engineer automating processes, or a programmer chasing raw speed, you’ll find something valuable in each chapter. Dive in, follow along, and let’s build better tools together!
+
+
+# Tool: Disable Cast Shadows by Default
+
+{% capture tutorialvideo %}p8nhfjOZa4?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
+
+# Tool: Get Shading Model from Material Instance
+
+{% capture tutorialvideo %}PdwIbybVyJM?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
+
+# Tool: Get Opacity Mask Clip Value from Material Instance
+
+{% capture tutorialvideo %}MHm38gBnPzs?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
