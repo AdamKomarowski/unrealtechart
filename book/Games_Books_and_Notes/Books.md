@@ -4,6 +4,28 @@ excerpt: ""
 permalink: "/book/Games_Books_and_Events/books/"
 ---
 
+## Wilczym Śladem
+
+{% include figure image_path="/assets/images/Wilczym_Sladem.png" alt="" caption="__Book:__ Wilczym Śladem" %}
+
+__Conclusions:__
+
+- The Witcher 3 sold 50 million copies.
+
+- The game was released in 2015.
+
+- Inspiring and intriguing.
+
+- Motivates to create games — 10/10.
+
+- There were 5,000 bugs, but our capacity was 2,000; bugs were prioritized by severity.
+
+- The Day 0 plan was to fix as many P0 bugs as possible, then move on to lower-priority ones.
+
+- An interesting story that shows the finalization process of a game is highly demanding.
+
+- The final stage can greatly influence how the game is perceived — that’s why, even when it’s the hardest, you have to push at full speed.
+
 ## Mirace Morning
 
 {% include figure image_path="/assets/images/MiraceMorning.png" alt="" caption="__Book:__ Mirace Morning" %}
