@@ -11,6 +11,11 @@ __Houdini & Unreal Engine – Small Presentation__
 
 A short presentation about the possibilities of using Houdini in the game development process, with a focus on its integration with Unreal Engine.
 
+
+{% capture tutorialvideo %}bhRTmCapGUM?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
+
+
 __Topics we’ll cover:__
 
 - Houdini Digital Assets (HDA)
@@ -51,8 +56,5 @@ __Conclusion – Why Houdini in Games?__
 
 - Fast integration process
 
-
-{% capture tutorialvideo %}bhRTmCapGUM?showinfo=1{% endcapture %}
-{% include video id=tutorialvideo provider="youtube" %}
 
 
