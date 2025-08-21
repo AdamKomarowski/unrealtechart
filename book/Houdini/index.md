@@ -7,7 +7,7 @@ permalink: "/book/houdini/"
 
 ## Procedural Assets Creations 
 
-__Houdini & Unreal Engine – Small Presentation__
+__Houdini & Unreal Engine__
 
 A short presentation about the possibilities of using Houdini in the game development process, with a focus on its integration with Unreal Engine.
 
