@@ -10,6 +10,8 @@ main:
     url: /book/unrealengine/
   - title: "Houdini"
     url: /book/houdini/
+  - title: "Tools"
+    url: /book/tools/
   - title: "Games, Books and Events"
     url: /book/Games_Books_and_Events/books/
   - title: "About"
