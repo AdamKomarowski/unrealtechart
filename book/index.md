@@ -26,6 +26,6 @@ Adam Komarowski
 
 [Lumen →]({{ site.baseurl }}{% link book/profiling/index.md %}){: .btn .btn--next}
 
-[Houdini →]({{ site.baseurl }}{% link book/houdini/index.md %}){: .btn .btn--next}
+[Houdini →]({{ site.baseurl }}{% link book/Houdini/houdini/index.md %}){: .btn .btn--next}
 
 [Resources →]({{ site.baseurl }}{% link book/resources/index.md %}){: .btn .btn--next}
