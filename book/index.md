@@ -20,11 +20,12 @@ Adam Komarowski
 
 [Tools in UE →]({{ site.baseurl }}{% link book/Tools/Tools.md %}){: .btn .btn--next}
 
-
 [Books →]({{ site.baseurl }}{% link book/Games_Books_and_Notes/Books.md %}){: .btn .btn--next}
 
 [Games →]({{ site.baseurl }}{% link book/Games_Books_and_Notes/Games.md %}){: .btn .btn--next}
 
 [Lumen →]({{ site.baseurl }}{% link book/profiling/index.md %}){: .btn .btn--next}
+
+[Houdini →]({{ site.baseurl }}{% link book/houdini/index.md %}){: .btn .btn--next}
 
 [Resources →]({{ site.baseurl }}{% link book/resources/index.md %}){: .btn .btn--next}
