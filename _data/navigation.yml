@@ -28,6 +28,10 @@ book:
   #  url: /book/coding/
   - title: "Tools"
     url: /book/tools/
+  - title: "Unreal Engine 5"
+    url: /book/unrealengine/
+  - title: "VFX"
+    url: /book/vfx/
   - title: "Games Books and Events"
     url: /book/Games_Books_and_Events/books/
     children:
