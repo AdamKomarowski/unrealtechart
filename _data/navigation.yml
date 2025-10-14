@@ -8,6 +8,8 @@ main:
    # url: /book/coding/
   - title: "Unreal Engine 5"
     url: /book/unrealengine/
+  - title: "VFX"
+    url: /book/vfx/
   - title: "Houdini"
     url: /book/houdini/
   - title: "Tools"
