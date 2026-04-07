@@ -30,6 +30,11 @@ book:
     url: /book/tools/
   - title: "Unreal Engine 5"
     url: /book/unrealengine/
+    children:
+      - title: "Static Meshes"
+        url: /book/unrealengine/static-meshes/
+      - title: "Textures"
+        url: /book/unrealengine/textures/
   - title: "VFX"
     url: /book/vfx/
   - title: "Games Books and Events"
