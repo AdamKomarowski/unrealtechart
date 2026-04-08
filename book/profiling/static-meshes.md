@@ -50,11 +50,19 @@ Use LODs when:
 - Nanite is **not** used in the project.
 - Working with **Skeletal Meshes** — Nanite is not supported for skeletal meshes, so LODs should always be set up when Nanite is unavailable.
 
+For guidance on how to tune LOD Screen Size per platform, see the [official documentation](https://dev.epicgames.com/documentation/unreal-engine/optimizing-lod-screen-size-per-platform-in-unreal-engine).
+
 ## Generate Lightmap UVs
 
 **Disable** Generate Lightmap UVs unless you are baking static lighting (Lightmass).
 
 From Unreal Engine 5 onward, the default lighting model is fully dynamic (Lumen). Generating lightmap UVs for meshes that will never be baked wastes memory and increases asset build times with no visual benefit.
+
+## UV Channels
+
+Keep the number of UV channels as low as possible — fewer UV channels means lower memory usage and faster rendering.
+
+**Watch out when exporting from Maya:** Maya often generates additional UV channels automatically during export (e.g. for light maps or secondary UVs), even when they are not needed. Always check the UV channels in Unreal after import and remove any that are unnecessary.
 
 ## Collision
 
