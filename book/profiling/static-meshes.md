@@ -6,7 +6,7 @@ toc: true
 toc_sticky: true
 ---
 
-# Material Slots
+## Material Slots
 
 Keep the number of material slots as low as possible. Each material slot generates a separate draw call, which increases rendering cost.
 
@@ -18,9 +18,9 @@ Keep the number of material slots as low as possible. Each material slot generat
 
 Combine them into a single composed asset inside a **Blueprint**.
 
-# Nanite Settings
+## Nanite Settings
 
-## Enable Nanite Support
+### Enable Nanite Support
 
 Enable Nanite Support should be **on** when your project uses Nanite, with the following exceptions:
 
@@ -42,7 +42,7 @@ Because the fallback mesh is not the primary rendered representation, keeping it
 
 **Tip:** You can preview how your Nanite fallback mesh looks in the viewport via **Show → Nanite → Nanite Fallback** (Fallback Mesh Visualization).
 
-# LOD
+## LOD
 
 Do **not** use LODs when Nanite is enabled — Nanite handles its own internal level-of-detail automatically.
 
@@ -50,8 +50,20 @@ Use LODs when:
 - Nanite is **not** used in the project.
 - Working with **Skeletal Meshes** — Nanite is not supported for skeletal meshes, so LODs should always be set up when Nanite is unavailable.
 
-# Generate Lightmap UVs
+## Generate Lightmap UVs
 
 **Disable** Generate Lightmap UVs unless you are baking static lighting (Lightmass).
 
 From Unreal Engine 5 onward, the default lighting model is fully dynamic (Lumen). Generating lightmap UVs for meshes that will never be baked wastes memory and increases asset build times with no visual benefit.
+
+## Collision
+
+Keep collisions as simple as possible — the simpler the better. Prefer primitive shapes:
+
+- **Sphere** — cheapest collision, ideal for rounded objects.
+- **Box** — good for rectangular shapes.
+- **Capsule** — useful for characters and vertical objects.
+
+**Never use "Use Complex Collision as Simple"** — this uses the full render mesh for physics, which is extremely expensive and should be avoided in all cases.
+
+If a mesh does not require any physical interaction (background props, purely visual elements), **do not assign any collision at all**.
