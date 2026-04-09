@@ -40,6 +40,8 @@ The fallback mesh is a coarse representation of the high-detail Nanite mesh. It 
 
 Because the fallback mesh is not the primary rendered representation, keeping it at ~10% polycount is a good balance between fidelity in fallback scenarios and memory/performance cost.
 
+This matters especially for ray tracing with Lumen. Hardware Ray Tracing (HWRT) traces rays against the fallback mesh directly, so its quality depends on how well the fallback represents the original shape. Software Ray Tracing (SWRT) works differently — it traces against a Distance Field instead. SWRT also has two modes: Detail Tracing uses the Mesh Distance Field (MDF) which is per-object and more accurate, while Global Tracing uses the Global Distance Field (GDF) which is a lower-resolution scene-wide representation and therefore the least accurate option for indirect lighting.
+
 **Tip:** You can preview how your Nanite fallback mesh looks in the viewport via **Show → Nanite → Nanite Fallback** (Fallback Mesh Visualization).
 
 ## LOD
