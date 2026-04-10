@@ -2,6 +2,8 @@
 title: "Books"
 excerpt: ""
 permalink: "/book/Games_Books_and_Events/books/"
+toc: true
+toc_sticky: true
 ---
 
 ## Wilczym Śladem
