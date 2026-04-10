@@ -29,6 +29,9 @@ r.RHICmdBypass 0
 
 After that, the next `ProfileGPU` capture will label each draw call with the material name, making it much easier to identify expensive or unexpected materials.
 
+{% capture tutorialvideo %}re-mNQoLHBs?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
+
 ## MemReport
 
 `MemReport` generates a full memory report — a detailed log of everything currently loaded into memory, including textures, meshes, sounds, and other assets. It works both on PC and on consoles, making it essential for tracking down memory budgets.
