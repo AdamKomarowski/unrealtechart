@@ -10,7 +10,7 @@ toc_sticky: true
 
 A simple `.bat` file that runs both the build and the cook in one go — no need to trigger them separately from the editor.
 
-{% capture tutorialvideo %}_ez5gbdiZ90?showinfo=1{% endcapture %}
+{% capture tutorialvideo %}FygowRHfgkc?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
 <div class="notice--info" markdown="1">
