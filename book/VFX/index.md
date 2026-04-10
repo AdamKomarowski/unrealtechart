@@ -136,6 +136,9 @@ Optimizing without profiling is shooting in the dark.
 
 `Niagara Effect Type` is a global settings asset for culling, scalability, and performance budgets. Create it in Content Browser: **Add New → FX → Advanced → Niagara Effect Type**, then assign it to each Niagara System in the `Effect Type` field.
 
+{% capture tutorialvideo %}VefnDwakcDs?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
+
 ### Core scalability settings:
 
 | Setting | Description |

@@ -290,8 +290,3 @@ Whether you’re a technical artist looking to iterate visually, a pipeline engi
 
 {% capture tutorialvideo %}MHm38gBnPzs?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
-
-# Tool: Niagara Effect Type
-
-{% capture tutorialvideo %}VefnDwakcDs?showinfo=1{% endcapture %}
-{% include video id=tutorialvideo provider="youtube" %}
