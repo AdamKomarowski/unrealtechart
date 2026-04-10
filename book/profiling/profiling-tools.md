@@ -45,3 +45,6 @@ The report is saved to the `Saved/Profiling/` folder. Use it to:
 - Identify textures streaming at full resolution when they shouldn't be.
 - Catch assets that are loaded but no longer referenced.
 - Verify memory usage before and after optimizations.
+
+{% capture tutorialvideo %}A68wGA3CY_A?showinfo=1{% endcapture %}
+{% include video id=tutorialvideo provider="youtube" %}
