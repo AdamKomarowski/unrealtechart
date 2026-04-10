@@ -2,6 +2,8 @@
 title: "Resources"
 excerpt: ""
 permalink: "/book/resources/"
+toc: true
+toc_sticky: true
 ---
 
 

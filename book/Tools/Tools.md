@@ -2,53 +2,55 @@
 title: "Tools"
 excerpt: ""
 permalink: "book/tools/"
+toc: true
+toc_sticky: true
 ---
 
-Building Tools in Unreal Engine 5
+Building Tools in Unreal Engine 5
 
-Welcome to the dedicated hub for tool creation in Unreal Engine 5. To make the learning path as clear—and actionable—as possible, this section is divided into three progressive parts, each building on the lessons of the previous one.
+Welcome to the dedicated hub for tool creation in Unreal Engine 5. To make the learning path as clear—and actionable—as possible, this section is divided into three progressive parts, each building on the lessons of the previous one.
 
-# Part 1 — Blueprints
+## Part 1 — Blueprints
 
-We start with UE5’s powerful visual‑scripting system. You’ll learn how to prototype ideas rapidly, expose parameters for designers, and iterate without recompiling. Expect hands‑on demos that get results on‑screen fast.
+We start with UE5's powerful visual‑scripting system. You'll learn how to prototype ideas rapidly, expose parameters for designers, and iterate without recompiling. Expect hands‑on demos that get results on‑screen fast.
 
 Video Tutorials
 
-# How to Use the BugIt Command in Unreal Engine
+### How to Use the BugIt Command in Unreal Engine
 
 {% capture tutorialvideo %}Ntdtf0UY70U?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-# Tool: Generate Lightmap UVs
+### Tool: Generate Lightmap UVs
 
 {% capture tutorialvideo %}S8XLTxFsikA?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-# Tool: Cast Shadows
+### Tool: Cast Shadows
 
 {% capture tutorialvideo %}FwKKHfStsMg?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-# Tool: Empty Actors
+### Tool: Empty Actors
 
 {% capture tutorialvideo %}3-jSbxYF1W8?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-# Tool: Duplicated Actors
+### Tool: Duplicated Actors
 
 {% capture tutorialvideo %}rABhgArqbEU?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
 
-# Part 2 — Python
+## Part 2 — Python
 
-With the workflow proven in Blueprints, we’ll graduate to Python scripting. Here we automate repetitive tasks, build pipeline helpers, and interface with external tools. Python lets us glue systems together and speed up daily production chores.
+With the workflow proven in Blueprints, we'll graduate to Python scripting. Here we automate repetitive tasks, build pipeline helpers, and interface with external tools. Python lets us glue systems together and speed up daily production chores.
 
-To trigger a Python script directly from an Editor Utility Widget, simply use the Execute Python Script node.
+To trigger a Python script directly from an Editor Utility Widget, simply use the Execute Python Script node.
 
 {% include figure image_path="/assets/images/Tools/Python/PytonExecute.png" alt="Execute Python Script node in Unreal Engine" %}
 
-# Tool: Organize Actors into Folders
+### Tool: Organize Actors into Folders
 
 {% capture tutorialvideo %}eg0ZIjq-25o?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
@@ -56,7 +58,7 @@ To trigger a Python script directly from an Editor Utility Widget, simply 
 <div class="notice--info" markdown="1">
 Code:
 
-
+```python
 import unreal
 
 # Create instances for editor utilities
@@ -109,7 +111,7 @@ unreal.log(f"Moved {moved_count} actors into folders (including 'Others')")
 ```
 </div>
 
-# Tool: Spawn Skeletal Meshes by LOD
+### Tool: Spawn Skeletal Meshes by LOD
 
 {% capture tutorialvideo %}ePSTRDG_dtY?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
@@ -192,7 +194,7 @@ place_skeletal_meshes_along_axis(
 ```
 </div>
 
-# Tool: Spawn Static Meshes Sorted by Size
+### Tool: Spawn Static Meshes Sorted by Size
 
 {% capture tutorialvideo %}iQHg3VJ5C68?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
@@ -269,24 +271,24 @@ place_meshes_along_axis([input_x, input_y, input_z], selected_assets, spacing)
 </div>
 
 
-# Part 3 — C++
+## Part 3 — C++
 
 Finally, we translate our prototypes into performant, production‑ready C++. This chapter focuses on writing clean modules, extending the editor, and squeezing every drop of performance out of custom tools.
 
-Whether you’re a technical artist looking to iterate visually, a pipeline engineer automating processes, or a programmer chasing raw speed, you’ll find something valuable in each chapter. Dive in, follow along, and let’s build better tools together!
+Whether you're a technical artist looking to iterate visually, a pipeline engineer automating processes, or a programmer chasing raw speed, you'll find something valuable in each chapter. Dive in, follow along, and let's build better tools together!
 
 
-# Tool: Disable Cast Shadows by Default
+### Tool: Disable Cast Shadows by Default
 
 {% capture tutorialvideo %}-p8nhfjOZa4?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-# Tool: Get Shading Model from Material Instance
+### Tool: Get Shading Model from Material Instance
 
 {% capture tutorialvideo %}PdwIbybVyJM?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
 
-# Tool: Get Opacity Mask Clip Value from Material Instance
+### Tool: Get Opacity Mask Clip Value from Material Instance
 
 {% capture tutorialvideo %}MHm38gBnPzs?showinfo=1{% endcapture %}
 {% include video id=tutorialvideo provider="youtube" %}
