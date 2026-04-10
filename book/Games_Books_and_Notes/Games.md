@@ -2,6 +2,8 @@
 title: "Games"
 excerpt: ""
 permalink: "/book/Games_Books_and_Events/games/"
+toc: true
+toc_sticky: true
 ---
 
 ## Alan Wake 2
