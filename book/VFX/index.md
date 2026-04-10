@@ -2,6 +2,8 @@
 title: "Tools"
 excerpt: ""
 permalink: "book/vfx/"
+toc: true
+toc_sticky: true
 ---
 
 ## Optimize VFX
