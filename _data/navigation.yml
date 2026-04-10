@@ -37,6 +37,8 @@ book:
         url: /book/unrealengine/textures/
       - title: "Profiling"
         url: /book/unrealengine/profiling/
+      - title: "Bonus"
+        url: /book/unrealengine/bonus/
   - title: "VFX"
     url: /book/vfx/
   - title: "Games Books and Events"
