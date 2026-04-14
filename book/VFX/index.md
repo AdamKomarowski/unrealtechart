@@ -115,10 +115,22 @@ Overdraw = the same pixel rendered multiple times by overlapping translucent par
 
 Optimizing without profiling is shooting in the dark.
 
+### Stat Commands
+
+**`stat GPU`** — shows the total GPU impact per stage. Useful for spotting overdraw cost in translucent particles and cycle cost of Niagara GPU Simulation passes.
+
+**`stat Niagara`** — a basic cost and memory overview: tick time, active system and emitter counts, total particle count, and memory usage. Good first stop when something feels slow.
+
+**`stat NiagaraEmitters`** — per-frame timing broken down by individual emitters. Use this to identify which specific emitter is the bottleneck.
+
+**`stat NiagaraSystems`** — per-frame timing broken down by Niagara Systems. Useful for comparing the cost of different systems against each other.
+
 | Tool | What it shows |
 |---|---|
-| `stat Niagara` | Tick time, system/emitter/particle counts, memory |
-| `stat GPU` | GPU time per stage (Translucency = mostly Niagara) |
+| `stat GPU` | Total GPU impact — overdraw in translucency, Niagara GPU Simulation cost |
+| `stat Niagara` | Basic cost and memory overview: tick time, counts, memory |
+| `stat NiagaraEmitters` | Per-frame timing per emitter |
+| `stat NiagaraSystems` | Per-frame timing per system |
 | GPU Profiler (`Ctrl+Shift+,`) | `Niagara::Tick`, `Niagara::Render`, material costs |
 | Niagara Debug HUD | Live: active systems, particle counts, scalability level |
 | Timing Insights (UE 5.4+) | CPU/GPU hierarchy per frame, systems labeled by name |
