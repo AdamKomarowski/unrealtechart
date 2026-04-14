@@ -132,8 +132,6 @@ Optimizing without profiling is shooting in the dark.
 | `stat NiagaraEmitters` | Per-frame timing per emitter |
 | `stat NiagaraSystems` | Per-frame timing per system |
 | GPU Profiler (`Ctrl+Shift+,`) | `Niagara::Tick`, `Niagara::Render`, material costs |
-| Niagara Debug HUD | Live: active systems, particle counts, scalability level |
-| Timing Insights (UE 5.4+) | CPU/GPU hierarchy per frame, systems labeled by name |
 
 ### Niagara Tick Time budget:
 
